@@ -28,7 +28,7 @@
     width: 161px;
     height: 48px;
     border-radius: 62px;
-    font-family: "Arimo";
+    font-family: "Arimo", sans-serif;
     font-size: 16px;
     border-color: black;
 
@@ -51,21 +51,24 @@
     color: #ffffff;
     padding-left: 48px;
     padding-top: 16px;
+    width: 100%;
 }
 
 #footer-top {
     padding-left: 24px;
     padding-bottom: 32px;
+    width: 1184px;
     display: flex;
     flex-direction: row;
     border-bottom: 2px solid white;
-
 }
 
 #footer-info {
     width: 50%;
     height: 104px;
 }
+
+a:hover {color:white}
 
 .bold-text-footer {
     color: #FFF;
@@ -86,13 +89,19 @@
     letter-spacing: -0.38px;
 }
 
+.text-footer-right {
+    padding-bottom: 24px;
+}
+
 .title-text-footer {
     font-family: seravek-web, sans-serif;
     font-size: 32px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 32px;
     letter-spacing: -0.38px;
+    margin-bottom: 0;
+    color: white;
 }
 
 #email-footer {
@@ -109,6 +118,8 @@
     border-bottom: 2px solid white;
     width: 353px;
     height: 33px;
+    margin-left: 40px;
+    margin-right: 20px;
 }
 
 ::placeholder {
@@ -132,6 +143,7 @@
 }
 
 #footer-bottom {
+    margin-top: 32px;
     display: flex;
     flex-direction: row;
 }
@@ -143,27 +155,31 @@
     font-weight: 400;
     display: flex;
     flex-direction: row;
+    margin-right: 100px;
+    align-items: center;
+    height: 40px;
 }
 
 #footer-logo {
     width: 43px;
     height: 61px;
+    margin-right: 16px;
 }
 
 #footer-location-hours {
-
+    margin-right: 125px;
 }
 
 #footer-boheme {
-
+    margin-right: 40px;
 }
 
 #footer-services {
-
+    margin-right: 40px;
 }
 
 #footer-media {
-
+    margin-right: 40px;
 }
 
 #footer-follow-us {
