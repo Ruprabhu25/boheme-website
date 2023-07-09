@@ -387,6 +387,47 @@
     width: 1280px;
     height: 300px;
 }
+
+#trade-text-align {
+    text-align: center;
+    float: left;
+    width: 803px;
+    margin-top: 55px;
+}
+
+#trade-h1 {
+    color: var(--nav-text, #545859);
+    font-family: "Readex Pro", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.76px;
+    margin-bottom: 24px;
+}
+
+#trade-h2 {
+    color: #878787;
+    font-family: "Arimo", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.38px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+#trade-h3 {
+    color: #878787;
+    text-align: center;
+    font-family: "Arimo", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.456px;
+}
 /* trade/background section end */
 
 
@@ -506,7 +547,7 @@ a:hover {color:white}
 
 #footer-logo-container {
     color: #FAFAFA;
-    font-family: Readex Pro;
+    font-family: "Readex Pro", sans-serif;
     font-size: 32px;
     font-weight: 400;
     display: flex;
