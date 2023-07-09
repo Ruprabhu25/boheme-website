@@ -1,4 +1,20 @@
+@font-face {
+    font-family: 'seravekmedium';
+    src: url('seravek-medium-webfont.woff2') format('woff2'),
+         url('seravek-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'seravekregular';
+    src: url('seravek-webfont.woff2') format('woff2'),
+         url('seravek-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*nav bar start*/
 #nav-container {
     height: 80px;
@@ -81,7 +97,7 @@ a:hover {color:white}
 }
 
 .text-footer {
-    font-family: seravek-web, sans-serif;
+    font-family: 'seravekregular';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -90,11 +106,11 @@ a:hover {color:white}
 }
 
 .text-footer-right {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .title-text-footer {
-    font-family: seravek-web, sans-serif;
+    font-family: 'seravekregular';
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -124,14 +140,14 @@ a:hover {color:white}
 
 ::placeholder {
     color: #FFF;
-    font-family: seravek-web, sans-serif;
+    font-family: 'seravekregular';
     font-size: 20px;
     font-style: normal;
 }
 
 #email-button {
     color: #192126;
-    font-family: seravek-web, sans-serif;
+    font-family: 'seravekregular';
     font-weight: bold;
     font-size: 20px;
     width: 147px;
