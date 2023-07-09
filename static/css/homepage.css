@@ -381,6 +381,14 @@
 
 
 /*gift guide end*/
+/* trade/background section start */
+#trade-background {
+    background-image: url("/static/img/background-trade.png");
+    width: 1280px;
+    height: 300px;
+}
+/* trade/background section end */
+
 
 /*footer start*/
 #footer {
