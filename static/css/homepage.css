@@ -310,15 +310,12 @@
 
 .minibar-scroll div {
     display: flex;
-    gap: 2em;
-}
-
-.slide2 {
-    padding-left: 64px;
+    gap: 16px;
 }
   
 .left-to-right {
     animation: left-to-right 20s infinite linear;
+    margin-left: 8px;
 }
 
 @keyframes left-to-right {
@@ -436,6 +433,56 @@
 
 
 /*gift guide end*/
+
+/* community section start */
+#community-container {
+    background-color: white;
+    text-align: center;
+}
+
+#community-title {
+    padding: 48px 0px;
+}
+
+#community-title h2 {
+    color: #878787;
+    font-family: "Arimo", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#community-title h1 {
+    color: #545859;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.community-img {
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    width: 310px;
+    height: 310px;
+}
+
+#community-social {
+    padding: 48px 0px;
+}
+
+#community-social h3 {
+    padding-bottom: 18px;
+}
+
+#community-social img {
+    padding: 0px 8px;
+}
+
+
+/* community section end */
+
+
 /* trade/background section start */
 #trade-background {
     background-image: url("/static/img/background-trade.png");
