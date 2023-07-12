@@ -1,204 +1,279 @@
 @font-face {
-    font-family: 'seravekmedium';
-    src: url('seravek-medium-webfont.woff2') format('woff2'),
-         url('seravek-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "seravekmedium";
+  src: url("seravek-medium-webfont.woff2") format("woff2"),
+    url("seravek-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'seravekregular';
-    src: url('seravek-webfont.woff2') format('woff2'),
-         url('seravek-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "seravekregular";
+  src: url("seravek-webfont.woff2") format("woff2"),
+    url("seravek-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 /*nav bar start*/
 #nav-container {
-    height: 80px;
-    width: 100%;
-    background-color: white;
-    padding-left: 48px;
-    padding-top: 16px;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  padding-left: 48px;
+  padding-top: 16px;
 }
 
 #nav-grid {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #boheme-logo {
-
 }
 
 .nav-item {
-    font-family: "Arimo";
-    font-size: 16px;
-    padding-top: 12px;
-    margin-right: 40px;
+  font-family: "Arimo";
+  font-size: 16px;
+  padding-top: 12px;
+  margin-right: 40px;
 }
 
 .nav-button {
-    width: 161px;
-    height: 48px;
-    border-radius: 62px;
-    font-family: "Arimo", sans-serif;
-    font-size: 16px;
-    border-color: black;
-
+  width: 161px;
+  height: 48px;
+  border-radius: 62px;
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  border-color: black;
 }
 
 #get-in-touch {
-    background-color: white;
-    color: black;
-    margin-right: 20px;
+  background-color: white;
+  color: black;
+  margin-right: 20px;
 }
 
 #visit-store {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 /*nav bar end*/
+#new-inventory {
+  color: #ffffff;
+  height: 700px;
+}
+
+.header1 {
+  font-size: 20px;
+  font-family: "Arimo";
+  color: #878787;
+  text-align: center;
+}
+.header2 {
+  font-size: 40px;
+  font-family: "Readex Pro";
+  color: #545859;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: auto auto auto auto;
+}
+.grid-header {
+  font-family: "Readex Pro";
+  font-size: 30px;
+  color: #000000;
+}
+.grid-item {
+  font-family: "Seravek";
+  font-size: 24px;
+  color: #545859;
+}
+.icon {
+  width: 150px;
+  height: auto;
+}
+.grid2-container {
+  column-gap: 25px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.left-grid-item {
+  font-family: "Seravek";
+  font-size: 24px;
+  color: #545859;
+  text-align: left;
+}
+.right-grid-item {
+  font-family: "Seravek";
+  font-size: 24px;
+  color: #545859;
+  text-align: right;
+}
+.orangead {
+  font-family: "Seravek";
+  font-weight: bold;
+  color: #f26d36;
+}
+.linktext {
+  font-family: "Arimo";
+  color: #f26d36;
+}
+.invbutton {
+  border: 1px solid black;
+  border-radius: 50px;
+  border-color: #f26d36;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 14px 28px;
+  font-size: 16px;
+  color: #f26d36;
+  font-family: "Arimo";
+}
+.buttonpos {
+  position: absolute;
+  top: 700px;
+  left: 600px;
+}
 /*footer start*/
 #footer {
-    background-color: black;
-    color: #ffffff;
-    padding-left: 48px;
-    padding-top: 16px;
-    width: 100%;
+  background-color: black;
+  color: #ffffff;
+  padding-left: 48px;
+  padding-top: 16px;
+  width: 100%;
 }
 
 #footer-top {
-    padding-left: 24px;
-    padding-bottom: 32px;
-    width: 1184px;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 2px solid white;
+  padding-left: 24px;
+  padding-bottom: 32px;
+  width: 1184px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid white;
 }
 
 #footer-info {
-    width: 50%;
-    height: 104px;
+  width: 50%;
+  height: 104px;
 }
 
-a:hover {color:white}
+a:hover {
+  color: white;
+}
 
 .bold-text-footer {
-    color: #FFF;
-    font-family: Epilogue;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: -0.456px;
+  color: #fff;
+  font-family: Epilogue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.456px;
 }
 
 .text-footer {
-    font-family: 'seravekregular';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.38px;
+  font-family: "seravekregular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.38px;
 }
 
 .text-footer-right {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .title-text-footer {
-    font-family: 'seravekregular';
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: -0.38px;
-    margin-bottom: 0;
-    color: white;
+  font-family: "seravekregular";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.38px;
+  margin-bottom: 0;
+  color: white;
 }
 
 #email-footer {
-    width: 50%;
-    height: 104px;
-    align-items: center;
-    padding-top: 26px;
+  width: 50%;
+  height: 104px;
+  align-items: center;
+  padding-top: 26px;
 }
 
 #email-input {
-    background-color: black;
-    color: white;
-    border: none;
-    border-bottom: 2px solid white;
-    width: 353px;
-    height: 33px;
-    margin-left: 40px;
-    margin-right: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 353px;
+  height: 33px;
+  margin-left: 40px;
+  margin-right: 20px;
 }
 
 ::placeholder {
-    color: #FFF;
-    font-family: 'seravekregular';
-    font-size: 20px;
-    font-style: normal;
+  color: #fff;
+  font-family: "seravekregular";
+  font-size: 20px;
+  font-style: normal;
 }
 
 #email-button {
-    color: #192126;
-    font-family: 'seravekregular';
-    font-weight: bold;
-    font-size: 20px;
-    width: 147px;
-    height: 48px;
-    border-radius: 62px;
-    border-color: black;
-    background: #FFF;
-    font-size: 16px;
+  color: #192126;
+  font-family: "seravekregular";
+  font-weight: bold;
+  font-size: 20px;
+  width: 147px;
+  height: 48px;
+  border-radius: 62px;
+  border-color: black;
+  background: #fff;
+  font-size: 16px;
 }
 
 #footer-bottom {
-    margin-top: 32px;
-    display: flex;
-    flex-direction: row;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
 }
 
 #footer-logo-container {
-    color: #FAFAFA;
-    font-family: Readex Pro;
-    font-size: 32px;
-    font-weight: 400;
-    display: flex;
-    flex-direction: row;
-    margin-right: 100px;
-    align-items: center;
-    height: 40px;
+  color: #fafafa;
+  font-family: Readex Pro;
+  font-size: 32px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  margin-right: 100px;
+  align-items: center;
+  height: 40px;
 }
 
 #footer-logo {
-    width: 43px;
-    height: 61px;
-    margin-right: 16px;
+  width: 43px;
+  height: 61px;
+  margin-right: 16px;
 }
 
 #footer-location-hours {
-    margin-right: 125px;
+  margin-right: 125px;
 }
 
 #footer-boheme {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 #footer-services {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 #footer-media {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 #footer-follow-us {
-
 }
 /*footer end*/
