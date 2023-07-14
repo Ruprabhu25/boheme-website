@@ -399,7 +399,7 @@
     color: #000000;
   }
   .grid-item {
-    font-family: "Seravek", sans-serif;
+    font-family: "seravekregular", sans-serif;
     font-size: 24px;
     color: #545859;
   }
@@ -414,19 +414,19 @@
     grid-template-columns: auto auto;
   }
   .left-grid-item {
-    font-family: "Seravek", sans-serif;
+    font-family: "seravekregular", sans-serif;
     font-size: 24px;
     color: #545859;
     text-align: left;
   }
   .right-grid-item {
-    font-family: "Seravek", sans-serif;
+    font-family: "seravekregular", sans-serif;
     font-size: 24px;
     color: #545859;
     text-align: right;
   }
   .orangead {
-    font-family: "Seravek", sans-serif;
+    font-family: "seravekregular", sans-serif;
     font-weight: bold;
     color: #f26d36;
   }
