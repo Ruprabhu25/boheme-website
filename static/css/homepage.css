@@ -19,7 +19,6 @@
 /*FontFace*/
 
 /*announcement starts*/
-
 .bold-font{
     font-weight: 700;
 }
@@ -60,6 +59,12 @@
     display: flex;
     flex-direction: row;
     cursor: pointer;
+}
+
+#boheme-logo img{
+    width: 123px;
+    height: auto;
+    margin-right: 60px;
 }
 
 
@@ -472,6 +477,11 @@
 }
 
 #community-social h3 {
+    color: #878787;
+    font-family: "seravekregular";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
     padding-bottom: 18px;
 }
 
@@ -535,7 +545,7 @@
 
 /*footer start*/
 #footer {
-    background-color: black;
+    background: #F26D36;    
     color: #ffffff;
     padding-left: 48px;
     padding-top: 16px;
@@ -605,7 +615,7 @@ a:hover {color:white}
 }
 
 #email-input {
-    background-color: black;
+    background-color: #F26D36;
     color: white;
     border: none;
     border-bottom: 2px solid white;
@@ -623,14 +633,15 @@ a:hover {color:white}
 }
 
 #email-button {
-    color: #192126;
+    color: #F26D36;
     font-family: 'seravekmedium';
     font-weight: bold;
     font-size: 20px;
     width: 147px;
     height: 48px;
     border-radius: 62px;
-    border-color: black;
+    border-color: #F26D36;
+    border-style: solid;
     background: #FFF;
     font-size: 16px;
     cursor: pointer;
@@ -656,13 +667,14 @@ a:hover {color:white}
     flex-direction: row;
     margin-right: 100px;
     align-items: center;
-    height: 40px;
+    height: 90px;
 }
 
 #footer-logo {
-    width: 43px;
-    height: 61px;
+    width: 184px;
+    height: auto;
     margin-right: 16px;
+    filter: brightness(0) invert(1);
 }
 
 #footer-location-hours {
@@ -679,6 +691,16 @@ a:hover {color:white}
 
 #footer-media {
     margin-right: 40px;
+}
+
+.footer-follow-us {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-icon {
+    width: 50px;
+    height: auto;
 }
  
 /* new change */
