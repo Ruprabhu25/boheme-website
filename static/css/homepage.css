@@ -53,6 +53,7 @@
     background-color: white;
     padding-left: 48px;
     padding-top: 16px;
+    z-index: 1000;
 }
 
 #nav-grid {
@@ -87,6 +88,7 @@
     cursor: pointer;
     font-weight: 700;
     margin-bottom: 12px;
+    outline: none;
 
 }
 
@@ -109,6 +111,7 @@
     transition: all .3s ease;
     align-items: center;
     text-align: center;
+    border: none;
     padding: 8px 32px;
     border-radius: 62px;
     font-family: "Arimo", sans-serif;
@@ -189,7 +192,7 @@
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 1000;
     margin-top: 4px;
     font-weight: 700;
     line-height: 32px;
@@ -199,11 +202,15 @@
   #dropdown-content a {
     float: none;
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-    padding: 24px;
+    z-index: 1000;
+    display: flex;
+    height: 70px;
+    padding: 0px 24px;
+    align-items: center;
+    gap: 10px;
   }
   
   #dropdown-content a:hover {
@@ -212,16 +219,30 @@
   
   #dropdown:hover #dropdown-content {
     display: block;
-    width: 300px;
+    width: 330px;
+    z-index: 1000;
   }
 
 /*nav bar end*/
 
 /*carousel start*/
 
+.carousel-body{
+    max-height: 480px;
+    overflow: hidden;
+    z-index: -1000;
+}
+
 .carousel-inner {
     background-color: #1e3722;
-  }
+    max-height: 480px;
+    width: 100%;
+    overflow: hidden;
+ }
+ 
+ .carousel-inner > .item > img {
+     margin: 0 auto;
+ }
 
  #indicators{
     width: 12px;
@@ -347,7 +368,99 @@
 }
 
 /* minibar end */
+/* buy sell trade start */
+#new-inventory {
+    color: #ffffff;
+  }
+  .header1 {
+    font-size: 20px;
+    font-family: "Arimo", sans-serif;
+    color: #878787;
+    text-align: center;
+    padding-top: 36px;
+    font-weight: 700;
+  }
+  .header2 {
+    font-size: 40px;
+    font-family: "Readex Pro", sans-serif;
+    color: #545859;
+    text-align: center;
+    padding-bottom: 24px;
+    font-weight: 500;
+  }
+  .grid-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto auto;
+  }
+  .grid-header {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 30px;
+    color: #000000;
+  }
+  .grid-item {
+    font-family: "Seravek", sans-serif;
+    font-size: 24px;
+    color: #545859;
+  }
 
+  .icon {
+    width: 150px;
+    height: auto;
+  }
+  .grid2-container {
+    column-gap: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .left-grid-item {
+    font-family: "Seravek", sans-serif;
+    font-size: 24px;
+    color: #545859;
+    text-align: left;
+  }
+  .right-grid-item {
+    font-family: "Seravek", sans-serif;
+    font-size: 24px;
+    color: #545859;
+    text-align: right;
+  }
+  .orangead {
+    font-family: "Seravek", sans-serif;
+    font-weight: bold;
+    color: #f26d36;
+  }
+  .linktext {
+    font-family: "Arimo", sans-serif;
+    color: #f26d36;
+  }
+  .invbutton {
+    display: flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62px;
+    border: 1px solid #f26d36;
+    background: #ffffff;
+    color: #f26d36;
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: -0.304px;
+    cursor: pointer;
+
+  }
+  .buttonpos {
+    display: flex;
+    padding-top: 24px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding-bottom: 48px;
+  }
+
+/* buy sell trade end*/
 /*gift guide start*/
 #gift-guide{
     width: 100%;
@@ -439,6 +552,140 @@
 
 /*gift guide end*/
 
+/* flower border start */
+#window-frame{
+    width:100%;
+    height: 48px;
+}
+
+#image-frame{
+    background-image: url("/static/img/flowerwindows.png");
+    width: 100%;
+    height: 48px;
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* flower border end */
+
+/* sustainability start */
+#sustainability-container{
+    width: 100%;
+}
+
+#sustainability {
+    padding: 48px 0px;
+    flex-direction: column;
+    width: 100%;
+}
+
+#sustainability h2{
+    color: #878787;
+    text-align: center;
+    font-family: "Arimo", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.38px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+
+#sustainability h1{
+    color: #545859;
+    text-align: center;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.76px;
+}
+
+#sustainability-passage{
+    display: flex;
+    padding: 0px 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+#sustainability-passage p{
+    color: #545859;
+    text-align: center;
+    font-family: 'seravekregular';
+    font-size: 20px;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.44px;
+    font-weight: 400;
+}
+
+#sustain-buttons{
+    display: flex;
+    padding-top: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    padding-bottom: 48px;
+}
+
+#side1{
+display: flex;
+    padding-right: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1 0 0;
+}
+
+#side2{
+    display: flex;
+    padding-left: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+#get-in-touch-button{
+    display: flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62px;
+    border: 1px solid #545859;
+    color: #545859;
+    background-color: #FFF;
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px; /* 200% */
+    letter-spacing: -0.304px;
+    cursor: pointer;
+}
+
+#donate-button{
+    display: flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62px;
+    border: 1px solid #F26D36;
+    background: #F26D36;
+    color: #FFF;
+    font-family: "Arimo", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: -0.342px;
+    cursor: pointer;
+}
+/* sustainability end */
+
 /* community section start */
 #community-container {
     background-color: white;
@@ -483,6 +730,9 @@
     font-style: normal;
     font-weight: 400;
     padding-bottom: 18px;
+    font-family: 'seravekregular';
+    font-size: 24px;
+    color: #878787;
 }
 
 #community-social img {
@@ -645,6 +895,7 @@ a:hover {color:white}
     background: #FFF;
     font-size: 16px;
     cursor: pointer;
+    border: none;
     font-weight: 500;
     line-height: 32px;
     letter-spacing: -0.38px;
