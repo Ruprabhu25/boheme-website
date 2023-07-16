@@ -120,14 +120,50 @@ h4 {
     font-weight: 400;
     text-align: left;
 }
-/*
-::placeholder {
-    color: #878787;
-    font-family: "seravekregular";
-    font-size: 24px;
-    font-weight: 400;
-    text-align: left;
-}*/
+
+.subscribe {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    border: 3px solid #545859;
+    margin: 6px 32px 0px 0px
+}
+
+.g-recaptcha {
+    transform: scale(1.5);
+    transform-origin: 0 0;
+    margin-bottom: 32px;
+}
+
+.grecaptcha-badge {
+    display: none !important;
+}
+
+#submit-button {
+    color: #FAFAFA;
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'seravekmedium';
+    font-weight: bold;
+    width: 124px;
+    height: 48px;
+    border-radius: 62px;
+    border-color: #F26D36;
+    border-style: solid;
+    background: #F26D36;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    padding: 8px 32px;
+}
 
 
 
