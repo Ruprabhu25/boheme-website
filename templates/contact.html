@@ -42,40 +42,40 @@
     <div id="get-in-touch-container">
         <h4>Get in Touch!</h4>
         <p>Ask us anything! We'll get back to you in 24-48 hours.</p>
-        <form>
+        <form method="post">
             <div class="input-div">
                 <h2>First Name</h2>
-                <input type="text">
+                <input type="text" name="first name" required>
             </div>
             <div class="input-div">
                 <h2>Last Name</h2>
-                <input type="text">
+                <input type="text" name="last name" required>
             </div>
             <div class="input-div">
                 <h2>Email</h2>
-                <input type="text">
+                <input type="email" name="email" required>
             </div>
             <div class="input-div">
                 <h2>How did you hear about us?</h2>
-                <input type="text">
+                <input type="text" name="reference" required>
             </div>
             <div class="input-div">
                 <h2>Message</h2>
-                <textarea placeholder="How can we help?"></textarea>
+                <textarea placeholder="How can we help?" name="message"></textarea>
             </div>
             <div class="input-div">
                 <h2>Be the first to know! Subscribe to our newsletter.</h2>
                 <div class="subscribe">
-                    <input type="checkbox">
+                    <input type="checkbox" name="subscribe">
                     <p style="margin-bottom: 18px">
                         I consent to receive news, offers, style tips and other promotional 
                         materials from Bohème via email. You can opt out at any time. 
-                        For more information, please see our Privacy Policy. 
+                        For more information, please see our <a href="">Privacy Policy</a>. 
                     </p>
                 </div>
                 <div class="captcha-submit">
                     <div class="g-recaptcha" data-sitekey="Your site key goes here"></div>
-                    <button id="submit-button">Submit</button>
+                    <button id="submit-button" type="submit" name="submit">Submit</button>
                 </div>
             </div>
         </form>
