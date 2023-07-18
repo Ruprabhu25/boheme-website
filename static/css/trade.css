@@ -1,3 +1,21 @@
+/*FontFace*/
+@font-face {
+    font-family: "seravekmedium";
+    src: url("seravek-medium-webfont.woff2") format("woff2"),
+      url("seravek-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "seravekregular";
+    src: url("seravek-webfont.woff2") format("woff2"),
+      url("seravek-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*FontFace*/
+
 /* trade/background section start */
 #trade-background {
     background-image: url("/static/img/background-trade.png");
@@ -12,7 +30,7 @@
     margin-top: 55px;
 }
 
-#trade-h1 {
+h1 {
     color: var(--nav-text, #545859);
     font-family: "Readex Pro", sans-serif;
     font-size: 40px;
@@ -39,7 +57,7 @@ h2 {
 p {
     color: #878787;
     text-align: center;
-    font-family: "Arimo", sans-serif;
+    font-family: "seravekregular", sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -63,5 +81,22 @@ h3 {
     text-transform: uppercase;
 }
 
+#earn-details {
+    margin: 32px auto;
+    width: 910px;
+    height: 64px;
+}
+
+strong {
+    color: #F26C34;
+    font-family: "seravekregular";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.456px;
+}
+
 
 /* What you earn end */
+
