@@ -65,3 +65,239 @@ h3 {
 
 
 /* What you earn end */
+
+/* FAQ Start */
+#faq {
+  background-color: #ffffff;
+  /*margin: 6%;*/
+  /*width: 100%;*/
+  padding-left: 48px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+.faqh {
+  font-family: "Readex Pro";
+  font-size: 40px;
+  color: #545859;
+}
+.collapsible {
+  background-color: #ffffff;
+  color: #545859;
+  cursor: pointer;
+  padding: 50px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  padding-left: 0;
+  outline: none;
+  font-size: 24px;
+  font-family: "Readex Pro";
+}
+
+.active,
+.collapsible:hover {
+  background-color: #ffffff;
+}
+
+.collapsible::after {
+  content: "\002B";
+  color: #f26d36;
+  float: right;
+  font-family: "Readex Pro";
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "\2212";
+}
+
+.content {
+  margin-left: 0;
+  border-bottom: 1px solid #545859;
+  padding: 0 18px;
+  padding-left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #ffffff;
+  font-family: "Readex Pro";
+  color: #878787;
+  font-size: 24px;
+}
+/*FAQ End */
+
+/*footer start*/
+#footer {
+  background: #f26d36;
+  color: #ffffff;
+  padding-left: 48px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+#footer-top {
+  padding-left: 24px;
+  padding-bottom: 32px;
+  padding-top: 24px;
+  /* padding-top: 24px; new change */
+  width: 1184px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid white;
+}
+
+#footer-info {
+  width: 50%;
+  height: 104px;
+}
+
+a:hover {
+  color: white;
+}
+
+/*changed font*/
+.bold-text-footer {
+  color: #ffffff;
+  font-family: Arimo, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.456px;
+}
+
+.text-footer {
+  font-family: "seravekregular";
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.38px;
+}
+
+.text-footer-right {
+  padding-bottom: 24px;
+  cursor: pointer;
+}
+
+.title-text-footer {
+  font-family: "seravekregular";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.38px;
+  margin-bottom: 0;
+  color: white;
+}
+
+#email-footer {
+  width: 50%;
+  height: 104px;
+  align-items: center;
+  padding-top: 26px;
+}
+
+#email-input {
+  background-color: #f26d36;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 353px;
+  height: 33px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: "seravekregular";
+  font-size: 20px;
+  font-style: normal;
+}
+
+#email-button {
+  color: #f26d36;
+  font-family: "seravekmedium";
+  font-weight: bold;
+  font-size: 20px;
+  width: 147px;
+  height: 48px;
+  border-radius: 62px;
+  border-color: #f26d36;
+  border-style: solid;
+  background: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.38px;
+}
+
+#footer-bottom {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 32px;
+  /* padding-bottom: 32px;  new change */
+}
+
+#footer-logo-container {
+  color: #fafafa;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  margin-right: 100px;
+  align-items: center;
+  height: 90px;
+}
+
+#footer-logo {
+  width: 184px;
+  height: auto;
+  margin-right: 16px;
+  filter: brightness(0) invert(1);
+}
+
+#footer-location-hours {
+  margin-right: 125px;
+}
+
+#footer-boheme {
+  margin-right: 40px;
+}
+
+#footer-services {
+  margin-right: 40px;
+}
+
+#footer-media {
+  margin-right: 40px;
+}
+
+.footer-follow-us {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-icon {
+  width: 50px;
+  height: auto;
+}
+
+/* new change */
+#copyright-footer {
+  text-align: center;
+  font-family: "seravekregular";
+  font-size: 16px;
+  padding-bottom: 16px;
+  letter-spacing: -0.304px;
+  text-transform: capitalize;
+}
+/* footer end */
