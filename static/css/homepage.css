@@ -27,10 +27,10 @@
     height:64px;
     font-weight: 400;
     width: 100%;
-    background-color: #191919;
-    color: white;
+    background-color: #FAF6F5;
+    color: #192126;
     text-align: center;
-    padding-top:16px;
+    padding-top: 16px;
   }
   
   #a-icon{
@@ -50,7 +50,8 @@
 #nav-container {
     height: 80px;
     width: 100%;
-    background-color: white;
+    background-color: #F26C34;
+    color:#FAF6F5;
     padding-left: 48px;
     padding-top: 16px;
     z-index: 1000;
@@ -65,7 +66,7 @@
 #boheme-logo img{
     width: 123px;
     height: auto;
-    margin-right: 60px;
+    margin-right: 48px;
 }
 
 
@@ -73,7 +74,7 @@
     font-family: "Arimo", sans-serif;
     font-size: 16px;
     padding-top: 12px;
-    margin-right: 40px;
+    margin-right: 36px;
     font-weight:700;
     line-height: 32px;
     letter-spacing: -0.304px;
@@ -84,7 +85,6 @@
     border-radius: 62px;
     font-family: "Arimo", sans-serif;
     font-size: 16px;
-    border-color: black;
     cursor: pointer;
     font-weight: 700;
     margin-bottom: 12px;
@@ -93,20 +93,16 @@
 }
 
 #get-in-touch {
-    background-color: white;
-    color: black;
+    background-color: #F26C34;
+    border-color: #FAF6F5;
+    color: #FAF6F5;
     margin-right: 16px;
-}
-
-#get-in-touch:hover{
-    background-color: #192126;
-    color: white;
-    border: 1px solid #014337;
+    border-style: solid;
 }
 
 #visit-store {
-    background-color: black;
-    color: white;
+    background-color: #FAF6F5;
+    color: #192126;
     display: flex;
     transition: all .3s ease;
     align-items: center;
@@ -116,7 +112,7 @@
     border-radius: 62px;
     font-family: "Arimo", sans-serif;
     font-size: 16px;
-    border-color: black;
+    border-color: #FAF6F5;
     cursor: pointer;
     font-weight: 700;
     margin-bottom: 12px;
@@ -126,8 +122,8 @@
 #visit-store > #arrow {
     width: 8px;
     height: 8px;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
+    border-right: 2px solid #192126;
+    border-bottom: 2px solid #192126;
     position: relative;
     transform: rotate(-45deg);
     margin: 0 6px;
@@ -168,12 +164,12 @@
     letter-spacing: -0.304px;
     border: none;
     outline: none;
-    color: #191919;
+    color: #FAF6F5;
     background-color: inherit;
   }
 
 #arrow-down{
-    border: solid black;
+    border: solid #FAF6F5;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -182,9 +178,6 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
-  #dropdown:hover #dropbtn {
-    background-color: white;
-  }
   
   #dropdown-content {
     display: none;
@@ -214,7 +207,7 @@
   }
   
   #dropdown-content a:hover {
-    background-color: #f9f9f9;
+    background-color: #FDF5EB;
   }
   
   #dropdown:hover #dropdown-content {
@@ -368,6 +361,130 @@
 }
 
 /* minibar end */
+
+/* store title start */
+#store-container{
+    width: 100%;
+    height: 601px;
+    background-image: url("/static/img/davisstore.png");
+
+}
+#store-title{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    background: rgba(255, 255, 255, 0.85);
+    height: 147px;
+}
+#title-container{
+    display: flex;
+    width: 655px;
+    height:80px;
+    padding: 24px 0px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#title-container h2{
+    color: #878787;
+    text-align: center;
+    font-family: Arimo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 160% */
+    letter-spacing: -0.38px;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+#title-container h1{
+    color:#545859;
+    text-align: center;
+    font-family: Readex Pro;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 80% */
+    letter-spacing: -0.76px;
+}
+#readerchoice{
+    display:flex;
+    width: 123px;
+    height: 123px;
+    align-items: flex-start;
+    gap: 6.872px;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+#store-subheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+#store-subheader p{
+    color: #545859;
+    font-family: Arimo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.456px;
+}
+
+#store-bttn{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 16px;
+}
+
+#store-hr{
+    display: flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #191919;
+    border-radius: 62px;
+    border: 1px solid #191919;
+    background-color: transparent;
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px; /* 200% */
+    letter-spacing: -0.304px;
+    cursor: pointer;
+}
+
+#visitbttn{
+    display: flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FAFAFA;
+    border-radius: 62px;
+    border: 1px solid #014337;
+    background: #192126;    
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px; /* 200% */
+    letter-spacing: -0.304px;
+    cursor: pointer;
+}
+/* store title end */
+
 /* buy sell trade start */
 #new-inventory {
     color: #ffffff;
@@ -375,7 +492,7 @@
   .header1 {
     font-size: 20px;
     font-family: "Arimo", sans-serif;
-    color: #878787;
+    color: #79955F;
     text-align: center;
     padding-top: 36px;
     font-weight: 700;
@@ -399,7 +516,7 @@
     color: #000000;
   }
   .grid-item {
-    font-family: "seravekregular", sans-serif;
+    font-family: "Seravek", sans-serif;
     font-size: 24px;
     color: #545859;
   }
@@ -414,19 +531,19 @@
     grid-template-columns: auto auto;
   }
   .left-grid-item {
-    font-family: "seravekregular", sans-serif;
+    font-family: "Seravek", sans-serif;
     font-size: 24px;
     color: #545859;
     text-align: left;
   }
   .right-grid-item {
-    font-family: "seravekregular", sans-serif;
+    font-family: "Seravek", sans-serif;
     font-size: 24px;
     color: #545859;
     text-align: right;
   }
   .orangead {
-    font-family: "seravekregular", sans-serif;
+    font-family: "Seravek", sans-serif;
     font-weight: bold;
     color: #f26d36;
   }
@@ -440,9 +557,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 62px;
-    border: 1px solid #f26d36;
+    border: 1px solid #000000;
     background: #ffffff;
-    color: #f26d36;
+    color: #000000;
     font-family: "Arimo", sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -552,25 +669,6 @@
 
 /*gift guide end*/
 
-/* flower border start */
-#window-frame{
-    width:100%;
-    height: 48px;
-}
-
-#image-frame{
-    background-image: url("/static/img/flowerwindows.png");
-    width: 100%;
-    height: 48px;
-    object-fit: contain;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-
-/* flower border end */
-
 /* sustainability start */
 #sustainability-container{
     width: 100%;
@@ -583,7 +681,7 @@
 }
 
 #sustainability h2{
-    color: #878787;
+    color: #79955F;
     text-align: center;
     font-family: "Arimo", sans-serif;
     font-size: 20px;
@@ -697,7 +795,7 @@ display: flex;
 }
 
 #community-title h2 {
-    color: #878787;
+    color: #79955F;
     font-family: "Arimo", sans-serif;
     font-size: 20px;
     font-weight: 700;
