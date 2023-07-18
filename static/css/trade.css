@@ -79,12 +79,86 @@ h3 {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 #earn-details {
     margin: 32px auto;
     width: 910px;
     height: 64px;
+}
+
+#deals-container {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    width: 1018px;
+    margin: 0px auto;
+}
+
+.deal {
+    width: 286px;
+}
+
+.deal p {
+    font-style: italic;
+}
+
+.deal-sub {
+    height: 306px;
+    text-align: center;
+    border-radius: 16.438px;
+    margin-bottom: 48px;
+    /* shadow */
+    box-shadow: 0px 12.14285659790039px 30.357141494750977px -6.071428298950195px rgba(0, 0, 0, 0.10), 0px 6.071428298950195px 30.357141494750977px 0px rgba(0, 0, 0, 0.10), 0px 60.71428298950195px 303.5714111328125px -121.4285659790039px rgba(0, 0, 0, 0.20);
+}
+
+.deal-sub h2 {
+    color: #545859;
+}
+
+.deal-sub img {
+    width: 83px;
+    height: auto;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+#most-popular {
+    display: flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    border-radius: 0px 0px 20px 20px;
+    background: #F26C34;
+    width: 222px;
+    margin: 0px auto;
+    margin-bottom: 48px;
+}
+
+#most-popular h2 {
+    color:#fff;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+h4 {
+    color: #000;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+h5 {
+    color: #878787;
+    text-align: center;
+    font-family: "seravekregular";
+    font-size: 18px;
+    font-weight: 400;
 }
 
 strong {
@@ -103,7 +177,7 @@ strong {
 /* FAQ Start */
 #faq {
   background-color: #ffffff;
-  /*margin: 6%;*/
+  margin-top: 184px;
   /*width: 100%;*/
   padding-left: 48px;
   padding-top: 16px;
