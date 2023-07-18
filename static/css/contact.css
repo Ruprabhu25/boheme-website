@@ -21,6 +21,7 @@
   text-align: center;
   margin-top: 80px;
   margin-bottom: 56px;
+  width: 100%;
 }
 
 h1 {
@@ -49,6 +50,7 @@ p {
   display: flex;
   flex-direction: row;
   margin: 0px 80px;
+  width: 100%;
 }
 
 #stop-by-left {
@@ -71,6 +73,7 @@ p {
 /* Get in Touch Start */
 #get-in-touch-container {
   margin: 88px 80px;
+  width: 100%;
 }
 
 #get-in-touch-container p {
@@ -169,6 +172,7 @@ input[type="checkbox"] {
 #faq {
   background-color: #ffffff;
   margin: 6%;
+  width: 100%;
 }
 .faqh {
   font-family: "Readex Pro";
