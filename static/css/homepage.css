@@ -546,6 +546,7 @@ gap: 16px;
     font-family: "Seravek", sans-serif;
     font-weight: bold;
     color: #f26d36;
+    display: inline-block;
   }
   .linktext {
     font-family: "Arimo", sans-serif;
