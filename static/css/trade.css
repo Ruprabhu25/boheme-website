@@ -68,7 +68,7 @@ p {
 
 /* how does it work start */
 #how-does-it-work{
-  height: 684px;
+  height: 704px;
   display: flex;
   padding: 48px 80px;
   justify-content: space-between;
@@ -114,7 +114,7 @@ letter-spacing: -0.76px;
 
 #store-bttn{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 16px;
   }
@@ -132,11 +132,10 @@ letter-spacing: -0.76px;
   font-family: "Arimo", bold, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
   letter-spacing: -0.304px;
   cursor: pointer;
   margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 #schedule-button{
@@ -151,11 +150,35 @@ letter-spacing: -0.76px;
   font-family: "Arimo", bold, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 32px; /* 177.778% */
+  line-height: 32px;
   letter-spacing: -0.342px;
+  margin-top: 24px;
   cursor: pointer;
 }
 
+#number-work h1{
+  font-family:'seravekmedium'; 
+  font-weight: bold; 
+  font-size: 48px; 
+  display: inline-block;
+  margin-right:26px;
+}
+
+#panel-group{
+  padding: 20px;
+  width: 580px; 
+  border-radius: 20px;
+  background: #FFF; 
+  border:none; 
+  cursor: pointer;
+}
+
+#panel-th1{
+  margin-left: 20px; 
+  margin-right: 20px;
+  margin-top: 0px; 
+  margin-bottom: 0px;
+}
 /* how does it work end */
 
 /* What you earn start */
