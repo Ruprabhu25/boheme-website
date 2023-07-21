@@ -296,8 +296,7 @@ h2 {
 .check{
   background: url('../img/check.png') no-repeat left top;
   height: 34px;
-  padding-top: 7px;
-  padding-left: 44px;
+  padding-left: 16px;
 }
 
 #condition {
