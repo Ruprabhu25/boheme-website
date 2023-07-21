@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Epilogue' rel='stylesheet'>
+    <link href="//db.onlinewebfonts.com/c/5403db4e1a69d1dc66c1390eaca099d8?family=Seravek+Basic" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/279088fe0122006ce3444d71d6e07d62?family=Seravek+Basic+Light" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">   
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="stylesheet" href="/static/css/trade.css">
+</head>
+<body>
+  <!-- announcement-->
+  <div id="announcement">
+    <span id="a-icon">🏖️ </span>Ownership is on vacation! We are not currently conducting trade-ins until <span class="bold-font"> August 8th, 2023.</span> <a id ="underline"> Learn More </a>
+  </div>
+    <!--nav bar-->
+    <div id="nav-container">
+        <div id="nav-grid">
+            <div id="boheme-logo" onClick="location.href='homepage.html'"><img src="/static/img/boheme-white-logo.png"></div>
+            <div class="nav-item" onClick="location.href='homepage.html'">HOME</div>
+            <div class="nav-item">ABOUT</div>
+            <div class="nav-item">BUY-SELL-TRADE</div>
+            <div class="nav-item">GIFT GUIDE</div>
+            <div id="dropdown">
+                <button id="dropbtn">MEDIA
+                  <i id="arrow-down"></i>
+                </button>
+                <div id="dropdown-content">
+                  <a href="#">FUN PHOTOS</a>
+                  <a href="#">VIBIN' VIDEOS</a>
+                  <a href="#">IN THE NEWS</a>
+                  <a href="#">BLOG</a>
+                </div>
+              </div>
+            <button class="nav-button" id="get-in-touch" onClick="location.href='contact.html'">GET IN TOUCH</button>
+            <button id="visit-store">VISIT STORE <span id="arrow"></span></button>
+        </div>
+    </div>
+    <div id="trade-background">
+        <div id=trade-text-align>
+            <h2>Summer season</h2>
+            <h1>Declutter & Sell your summer items.</h1>
+            <p>Summer dresses, short sleeve blouses, tank tops, skirts, shorts, etc.</p>
+        </div>
+    </div>
+    <!--Looking to Sell-->
+    <div id="looking2sell">
+      <br>
+      <br>
+      <div id="sellh1">LOOKING TO SELL?</div> <br>
+      <div id="sellh2">What we are looking for</div> <br>
+      <div id="sellh3">We are overstocked with women's jeans, pants, & shoes, and will be extremely selective
+        in what we purchase. <br> We don't accept brands such as...
+      </div> 
+    </div>
+    <!--Condition, InSeason, Mens, Womens-->
+    <div id="condition">
+      <button type="button" class="collapsiblec">
+        <div class="grid-container">
+          <div class="img-entry"><img src="../static/img/clothes.png"></div>
+          <div class="entry-top">condition</div> 
+          <div class="entry-bottom">NEW & GENTLY USED</div>
+        </div>
+      </button>
+      <div class="content">
+        <p>Sample text, content, or links to be placed here.</p>
+      </div>
+      <button type="button" class="collapsiblec">
+        <div class="grid-container">
+          <div class="img-entry"><img src="../static/img/season.png"></div> 
+          <div class="entry-top">in-season</div>
+          <div class="entry-bottom">YEAR ROUND + SEASONAL</div>
+      </button>
+      <div class="content">
+        <p>Sample text, content, or links to be placed here.</p>
+      </div>
+      <button type="button" class="collapsiblec">
+        womens
+      </button>
+      <div class="content">
+        <p>Sample text, content, or links to be placed here.</p>
+      </div>
+      <button type="button" class="collapsiblec">
+        mens
+      </button>
+      <div class="content">
+        <p>Sample text, content, or links to be placed here.</p>
+      </div>
+      <button type="button" class="collapsiblec">
+        <div class="grid-container">
+          <div class="img-entry"><img src="../static/img/premium.png"></div>
+          <div class="entry-top">premium</div> 
+          <div class="entry-bottom">HIGH-END + LIMITED EDITION</div>
+        </div>
+      </button>
+      <div class="content">
+        <p>Sample text, content, or links to be placed here.</p>
+      </div>
+      <script>
+        var coll = document.getElementsByClassName("collapsiblec");
+        var i;
+  
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
+    </div>
+     <!--how does it work-->
+     <div id="how-does-it-work"> 
+      <div id ="work-side1"> 
+        <h2 style="display:inline-block; color:#F26D34;font-size:20px;"> 
+          <img style="height:24px;width:24px;margin-right:10px;"src="/static/img/timeicon.png"/>  ~ 15 minutes </h2>
+        <h1 style="text-transform: none; margin-bottom: 32px;"> How does it works?</h1>
+        <p style="text-align: left;">Other consignment stores require your clothing items to sell before you can get paid. </p>
+        <p style="text-align: left;">We disagree! If we think we can resell them, <span style="font-family:'seravekmedium'; color: #F26D34"> we buy your clothes from you</span>.</p>
+      </div>
+      <div id="work-side2">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <div class ="container"> 
+          <div class="panel-group" id="accordion">
+            <div id="panel-group"  class="panel panel-default">
+              <div class="panel-heading" style="background:#FFF;">
+                <h4 class="panel-title">
+                  <h1 id="panel-th1" data-toggle="collapse" data-parent="#accordion" href="#collapse1"> <span id="number-work">
+                    <h1> 01 </h1></span> Bring your Items</h1>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div style="border:none;" class="panel-body"><p style="text-align:left;"> 
+                  We serve our guests on a first come, first serve basis or by appointment during in-store hours.</p>
+                  <div id="store-bttn">
+                    <button id="store-hr" onClick="location.href='contact.html'">STORE HOURS</button>
+                  <button id="schedule-button" onClick="window.open('https://squareup.com/appointments/book/3srvschplnsg15/DYX6Q6CE3GKAW/services','_blank')"> SCHEDULE APPOINTMENT</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div id="panel-group" class="panel panel-default">
+              <div class="panel-heading" style="background: #FFF;">
+                <h4 class="panel-title">
+                  <h1 id="panel-th1" data-toggle="collapse" data-parent="#accordion" href="#collapse2"> 
+                    <span id="number-work"><h1> 02 </h1></span>  Recieve a Quote </h1>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div style="border:none;;" class="panel-body"><p style="text-align:left;">
+                  Our experienced team will inspect your clothes based on brand, condition, and unique style.  </p>
+                  <button id="store-hr">VIEW SELLING GUIDE</button>
+                </div>
+              </div>
+            </div>
+            <div id="panel-group" class="panel panel-default">
+              <div class="panel-heading" style="background: #FFF;">
+                <h4 class="panel-title">
+                  <h1 id="panel-th1" data-toggle="collapse" data-parent="#accordion" href="#collapse3"> 
+                    <span id="number-work"><h1> 03 </h1></span>  Choose to Trade, Sell, or Donate</h1>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div style="border:none;" class="panel-body"><p style="text-align:left;"> You must be 
+                  <span style="font-family: 'seravekmedium'; display:inline-block"> 18 years</span> 
+                  (or accompanied by an adult) & present a valid photo to sell items. </p>
+                  <button id="store-hr">VIEW PRICING GUIDE</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+      </div>
+    </div>
+    <div id="earn-titles">
+        <h3>Lets Trade!</h3>
+        <h1>What you earn</h2>
+        <p>Based on the potential selling price in the current season, you can receive</p>
+    </div>
+    <div id="deals-container">
+        <div class="deal">
+            <div class="deal-sub" style="padding-top: 96px;">
+                <h2>Cash</h2>
+                <h4>12.5%</h4>
+                <h5 style="margin-bottom: 64px;">Receive cash upfront.</h5>
+            </div>
+            <p>Non-premium items are on average $0.75 to $1.50 each.</p>
+        </div>
+        <div class="deal">
+            <div class="deal-sub">
+                <div id="most-popular">
+                    <h2>Most Popular</h2>
+                </div>
+                <h2>Store Credit</h2>
+                <h4>25%</h4>
+                <h5 style="margin-bottom: 64px;">Expires after one year.</h5>
+            </div>
+            <p>Non-premium items are on average $1.50 to $3 each.</p>
+        </div>
+        <div class="deal">
+            <div class="deal-sub" style="padding-top: 32px;">
+                <h2 style="margin-bottom: 0px;">The Sustainable</h2>
+                <h2>Decision</h2>
+                <img src="/static/img/outline-shirt.png" />
+                <h5 style="margin-bottom: 32px;">Not expected but we greatly appreciate donations :)</h5>
+            </div>
+            <p>Your contributions will help our business.</p>
+        </div>
+    </div>
+    <div id="earn-details">
+        <p>You must be <strong>18 years old</strong> (or accompanied by an adult) & present a valid photo to sell items. 
+            Premium labels, vintage items, and highly unique items earn a <strong>higher compensation</strong>.</p>
+    </div>
+    <div id="faq">
+      <h1 class="faqh">Frequently Asked Questions</h1>
+      <button type="button" class="collapsible">
+        When can I come into the store to sell or trade-in clothes?
+      </button>
+      <div class="content">
+        <p>Sample text, content, or links to be placed here.</p>
+      </div>
+      <button type="button" class="collapsible">
+        Can I mail in my clothes?
+      </button>
+      <div class="content">
+        <p>Sample text, content, or links to be placed here.</p>
+      </div>
+      <button type="button" class="collapsible">
+        Why doesn't Boheme offer more money for clothing?
+      </button>
+      <div class="content">
+        <p>
+          Unlike consignment stores, we pay you regardless of whether your item
+          sells or not. This means we take on the risk. Our prices are lower
+          because we sell most items between $6 and $12, and we couldn't offer
+          these affordable prices if we paid more for items that may or may not
+          sell.
+        </p>
+      </div>
+      <button type="button" class="collapsible">
+        Does your store accept donations?
+      </button>
+      <div class="content">
+        <p>Absolutely (and we greatly appreciate it)!</p>
+      </div>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+    <!--footer-->
+    <div id="footer">
+      <div id="footer-top">
+        <div id="footer-info">
+          <p class="bold-text-footer">Sign Up and Save</p>
+          <p class="text-footer">
+            Be kept up-to-date on our sales, specials, and new product offerings
+            by signing up for our newsletter.
+          </p>
+        </div>
+        <div id="email-footer">
+          <input id="email-input" type="text" placeholder="Email Address" />
+          <button id="email-button">Subscribe</button>
+        </div>
+      </div>
+      <div id="footer-bottom">
+        <div id="footer-logo-container">
+          <img id="footer-logo" src="/static/img/boheme-logo-full.png" />
+        </div>
+        <div id="footer-location-hours">
+          <p class="bold-text-footer">Location</p>
+          <p class="text-footer">409 3RD STREET, DAVIS, CA</p>
+          <p class="bold-text-footer">Hours</p>
+          <p class="text-footer">SUN - FRI: 11:00 - 6:00</p>
+          <p class="text-footer">SAT: 10:30 - 6:00</p>
+          <p class="bold-text-footer">Phone Number</p>
+          <p class="text-footer">530-341-2004</p>
+        </div>
+        <div id="footer-boheme">
+          <p class="bold-text-footer">Bohème</p>
+          <p style="padding-top: 24px" class="text-footer text-footer-right">
+            Home
+          </p>
+          <p class="text-footer text-footer-right">About</p>
+          <p style="cursor: pointer" class="text-footer">Contact</p>
+        </div>
+        <div id="footer-services">
+          <p style="cursor: auto" class="bold-text-footer text-footer-right">
+            Services
+          </p>
+          <p class="text-footer text-footer-right">Our Store</p>
+          <p style="cursor: pointer" class="text-footer">Buy-Sell-Trade</p>
+        </div>
+        <div id="footer-media">
+          <p style="cursor: auto" class="bold-text-footer text-footer-right">
+            Media
+          </p>
+          <p class="text-footer text-footer-right">Fun Photos</p>
+          <p class="text-footer text-footer-right">Vibin' Videos</p>
+          <p class="text-footer text-footer-right">In the News</p>
+          <p style="cursor: pointer" class="text-footer">Blog</p>
+        </div>
+        <div id="footer-follow-us">
+          <p style="cursor: auto" class="bold-text-footer text-footer-right">
+            Follow Us
+          </p>
+          <a href="https://www.instagram.com/boheme.threads/?hl=en">
+            <img
+              style="cursor: pointer"
+              src="/static/img/footer-instagram.png"
+              class="footer-icon"
+            />
+          </a>
+          <a href="https://www.facebook.com/BohemeThreads/">
+            <img
+              style="cursor: pointer"
+              src="/static/img/footer-facebook.png"
+              class="footer-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div id="copyright-footer">2023. Bohème Used Clothing & Gifts</div>
+    </div>
+</body>
+</html>

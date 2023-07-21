@@ -1,0 +1,727 @@
+/*FontFace*/
+@font-face {
+    font-family: "seravekmedium";
+    src: url("seravek-medium-webfont.woff2") format("woff2"),
+      url("seravek-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "seravekregular";
+    src: url("seravek-webfont.woff2") format("woff2"),
+      url("seravek-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*FontFace*/
+
+ /*announcement starts*/
+.bold-font{
+  font-weight: 700;
+}
+
+#announcement{
+  height:64px;
+  font-weight: 400;
+  width: 100%;
+  background-color: #FAF6F5;
+  color: #192126;
+  text-align: center;
+  padding-top: 16px;
+  font-size: 16px;
+}
+
+#a-icon{
+  margin-right: 12px;
+}
+
+#underline{
+  font-weight: 400;
+  margin-left: 24px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*announcement ends*/
+
+/*nav bar start*/
+#nav-container {
+  height: 80px;
+  width: 100%;
+  background-color: #F26C34;
+  color:#FAF6F5;
+  padding-left: 48px;
+  padding-top: 16px;
+  z-index: 1000;
+}
+
+#nav-grid {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+#boheme-logo img{
+  width: 123px;
+  height: auto;
+  margin-right: 48px;
+
+}
+
+
+.nav-item {
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  padding-top: 12px;
+  margin-right: 36px;
+  font-weight:700;
+  line-height: 32px;
+  letter-spacing: -0.304px;
+}
+
+.nav-button {
+  padding: 8px 32px;
+  border-radius: 62px;
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 12px;
+  outline: none;
+
+}
+
+#get-in-touch {
+  background-color: #F26C34;
+  border-color: #FAF6F5;
+  color: #FAF6F5;
+  margin-right: 16px;
+  border-style: solid;
+}
+
+#visit-store {
+  background-color: #FAF6F5;
+  color: #192126;
+  display: flex;
+  transition: all .3s ease;
+  align-items: center;
+  text-align: center;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 62px;
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  border-color: #FAF6F5;
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+
+#visit-store > #arrow {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #192126;
+  border-bottom: 2px solid #192126;
+  position: relative;
+  transform: rotate(-45deg);
+  margin: 0 6px;
+  transition: all .3s ease;
+}
+
+#visit-store > #arrow::before {
+  display: block;
+  background-color: currentColor;
+  width: 3px;
+  transform-origin: bottom right;
+  height: 2px;
+  position: absolute;
+  opacity: 0;
+  bottom: calc(-2px / 2);
+  transform: rotate(45deg);
+  transition: all .3s ease;
+  content: "";
+  right: 0;
+}
+
+#visit-store:hover > #arrow {
+  transform: rotate(-45deg) translate(5px, 5px);
+  border-color: text-hover-color;
+}
+
+#dropdown {
+  overflow: visible;
+}
+
+#dropdown #dropbtn {
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  padding-top: 12px;
+  margin-right: 40px;
+  font-weight:700;
+  line-height: 32px;
+  letter-spacing: -0.304px;
+  border: none;
+  outline: none;
+  color: #FAF6F5;
+  background-color: inherit;
+}
+
+#arrow-down{
+  border: solid #FAF6F5;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+  margin-top: 4px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.304px;
+}
+
+#dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: 1000;
+  display: flex;
+  height: 70px;
+  padding: 0px 24px;
+  align-items: center;
+  gap: 10px;
+}
+
+#dropdown-content a:hover {
+  background-color: #FDF5EB;
+}
+
+#dropdown:hover #dropdown-content {
+  display: block;
+  width: 330px;
+  z-index: 1000;
+}
+
+/*nav bar end*/
+
+/* trade/background section start */
+#trade-background {
+    background-image: url("/static/img/background-trade.png");
+    width: 1280px;
+    height: 300px;
+}
+
+#trade-text-align {
+    text-align: center;
+    float: left;
+    width: 803px;
+    margin-top: 55px;
+}
+
+h1 {
+    color: var(--nav-text, #545859);
+    font-family: "Readex Pro", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.76px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #878787;
+    font-family: "Arimo", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.38px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+p {
+    color: #878787;
+    text-align: center;
+    font-family: "seravekregular", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.456px;
+}
+/* trade/background section end */
+
+/* how does it work start */
+#how-does-it-work{
+  height: 704px;
+  display: flex;
+  padding: 48px 80px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  background: #FAF9F5;
+}
+
+#work-side1{
+  display: flex;
+  width: 454px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 40px;  
+}
+
+#work-side1 h1{
+  color: #545859;
+font-family: "Readex Pro",  medium, sans-serif;
+font-size: 40px;
+font-weight: 500;
+line-height: 32px; /* 80% */
+letter-spacing: -0.76px;
+}
+
+#work-side2{
+  width: 595px;
+  margin-top: 32px;
+  height:500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#work-side2 h1{
+  font-size: 26.3px;
+  font-weight: 500;
+  line-height: 26.3px;
+  text-transform: none;
+  color:  #545859;
+  font-family: "Readex Pro", medium, sans-serif;
+}
+
+#store-bttn{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 16px;
+  }
+
+#store-hr{
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #191919;
+  border-radius: 62px;
+  border: 1px solid #191919;
+  background-color: transparent;
+  font-family: "Arimo", bold, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.304px;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+#schedule-button{
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 62px;
+  border: 1px solid #F26D36;
+  background: #F26D36;
+  color: #FFF;
+  font-family: "Arimo", bold, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.342px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+#number-work h1{
+  font-family:'seravekmedium'; 
+  font-weight: bold; 
+  font-size: 48px; 
+  display: inline-block;
+  margin-right:26px;
+}
+
+#panel-group{
+  padding: 20px;
+  width: 580px; 
+  border-radius: 20px;
+  background: #FFF; 
+  border:none; 
+  cursor: pointer;
+}
+
+#panel-th1{
+  margin-left: 20px; 
+  margin-right: 20px;
+  margin-top: 0px; 
+  margin-bottom: 0px;
+}
+/* how does it work end */
+
+/* What you earn start */
+#earn-titles {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+h3 {
+    color: #F26D36;
+    text-align: center;
+    font-family: "Arimo", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+#earn-details {
+    margin: 32px auto;
+    width: 910px;
+    height: 64px;
+}
+
+#deals-container {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    width: 1018px;
+    margin: 0px auto;
+}
+
+.deal {
+    width: 286px;
+}
+
+.deal p {
+    font-style: italic;
+}
+
+.deal-sub {
+    height: 306px;
+    text-align: center;
+    border-radius: 16.438px;
+    margin-bottom: 48px;
+    /* shadow */
+    box-shadow: 0px 12.14285659790039px 30.357141494750977px -6.071428298950195px rgba(0, 0, 0, 0.10), 0px 6.071428298950195px 30.357141494750977px 0px rgba(0, 0, 0, 0.10), 0px 60.71428298950195px 303.5714111328125px -121.4285659790039px rgba(0, 0, 0, 0.20);
+}
+
+.deal-sub h2 {
+    color: #545859;
+}
+
+.deal-sub img {
+    width: 83px;
+    height: auto;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+#most-popular {
+    display: flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    border-radius: 0px 0px 20px 20px;
+    background: #F26C34;
+    width: 222px;
+    margin: 0px auto;
+    margin-bottom: 48px;
+}
+
+#most-popular h2 {
+    color:#fff;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+h4 {
+    color: #000;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+h5 {
+    color: #878787;
+    text-align: center;
+    font-family: "seravekregular";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+strong {
+    color: #F26C34;
+    font-family: "seravekregular";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.456px;
+}
+
+
+/* What you earn end */
+
+/* FAQ Start */
+#faq {
+  background-color: #ffffff;
+  margin-top: 184px;
+  padding-left: 48px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+.faqh {
+  font-family: "Readex Pro";
+  font-size: 40px;
+  color: #545859;
+}
+.collapsible {
+  background-color: #ffffff;
+  color: #545859;
+  cursor: pointer;
+  padding: 50px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  padding-left: 0;
+  outline: none;
+  font-size: 24px;
+  font-family: "Readex Pro";
+}
+
+.active,
+.collapsible:hover {
+  background-color: #ffffff;
+}
+
+.collapsible::after {
+  content: "\002B";
+  color: #f26d36;
+  float: right;
+  font-family: "Readex Pro";
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "\2212";
+}
+
+.content {
+  margin-left: 0;
+  border-bottom: 1px solid #545859;
+  padding: 0 18px;
+  padding-left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #ffffff;
+  font-family: "Readex Pro";
+  color: #878787;
+  font-size: 24px;
+}
+/*FAQ End */
+
+/*footer start*/
+#footer {
+  background: #f26d36;
+  color: #ffffff;
+  padding-left: 48px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+#footer-top {
+  padding-left: 24px;
+  padding-bottom: 32px;
+  padding-top: 24px;
+  /* padding-top: 24px; new change */
+  width: 1184px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid white;
+}
+
+#footer-info {
+  width: 50%;
+  height: 104px;
+}
+
+a:hover {
+  color: white;
+}
+
+/*changed font*/
+.bold-text-footer {
+  color: #ffffff;
+  font-family: Arimo, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.456px;
+}
+
+.text-footer {
+  font-family: "seravekregular";
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.38px;
+}
+
+.text-footer-right {
+  padding-bottom: 24px;
+  cursor: pointer;
+}
+
+.title-text-footer {
+  font-family: "seravekregular";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.38px;
+  margin-bottom: 0;
+  color: white;
+}
+
+#email-footer {
+  width: 50%;
+  height: 104px;
+  align-items: center;
+  padding-top: 26px;
+}
+
+#email-input {
+  background-color: #f26d36;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 353px;
+  height: 33px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: "seravekregular";
+  font-size: 20px;
+  font-style: normal;
+}
+
+#email-button {
+  color: #f26d36;
+  font-family: "seravekmedium";
+  font-weight: bold;
+  font-size: 20px;
+  width: 147px;
+  height: 48px;
+  border-radius: 62px;
+  border-color: #f26d36;
+  border-style: solid;
+  background: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.38px;
+}
+
+#footer-bottom {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 32px;
+  /* padding-bottom: 32px;  new change */
+}
+
+#footer-logo-container {
+  color: #fafafa;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  margin-right: 100px;
+  align-items: center;
+  height: 90px;
+}
+
+#footer-logo {
+  width: 184px;
+  height: auto;
+  margin-right: 16px;
+  filter: brightness(0) invert(1);
+}
+
+#footer-location-hours {
+  margin-right: 125px;
+}
+
+#footer-boheme {
+  margin-right: 40px;
+}
+
+#footer-services {
+  margin-right: 40px;
+}
+
+#footer-media {
+  margin-right: 40px;
+}
+
+.footer-follow-us {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-icon {
+  width: 50px;
+  height: auto;
+}
+
+/* new change */
+#copyright-footer {
+  text-align: center;
+  font-family: "seravekregular";
+  font-size: 16px;
+  padding-bottom: 16px;
+  letter-spacing: -0.304px;
+  text-transform: capitalize;
+}
+/* footer end */
