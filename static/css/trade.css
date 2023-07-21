@@ -1,42 +1,42 @@
 /*FontFace*/
 @font-face {
-    font-family: "seravekmedium";
-    src: url("seravek-medium-webfont.woff2") format("woff2"),
-      url("seravek-medium-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "seravekregular";
-    src: url("seravek-webfont.woff2") format("woff2"),
-      url("seravek-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  /*FontFace*/
+  font-family: "seravekmedium";
+  src: url("seravek-medium-webfont.woff2") format("woff2"),
+    url("seravek-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
- /*announcement starts*/
-.bold-font{
+@font-face {
+  font-family: "seravekregular";
+  src: url("seravek-webfont.woff2") format("woff2"),
+    url("seravek-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*FontFace*/
+
+/*announcement starts*/
+.bold-font {
   font-weight: 700;
 }
 
-#announcement{
-  height:64px;
+#announcement {
+  height: 64px;
   font-weight: 400;
   width: 100%;
-  background-color: #FAF6F5;
+  background-color: #faf6f5;
   color: #192126;
   text-align: center;
   padding-top: 16px;
   font-size: 16px;
 }
 
-#a-icon{
+#a-icon {
   margin-right: 12px;
 }
 
-#underline{
+#underline {
   font-weight: 400;
   margin-left: 24px;
   cursor: pointer;
@@ -49,8 +49,8 @@
 #nav-container {
   height: 80px;
   width: 100%;
-  background-color: #F26C34;
-  color:#FAF6F5;
+  background-color: #f26c34;
+  color: #faf6f5;
   padding-left: 48px;
   padding-top: 16px;
   z-index: 1000;
@@ -62,20 +62,18 @@
   cursor: pointer;
 }
 
-#boheme-logo img{
+#boheme-logo img {
   width: 123px;
   height: auto;
   margin-right: 48px;
-
 }
-
 
 .nav-item {
   font-family: "Arimo", sans-serif;
   font-size: 16px;
   padding-top: 12px;
   margin-right: 36px;
-  font-weight:700;
+  font-weight: 700;
   line-height: 32px;
   letter-spacing: -0.304px;
 }
@@ -89,22 +87,21 @@
   font-weight: 700;
   margin-bottom: 12px;
   outline: none;
-
 }
 
 #get-in-touch {
-  background-color: #F26C34;
-  border-color: #FAF6F5;
-  color: #FAF6F5;
+  background-color: #f26c34;
+  border-color: #faf6f5;
+  color: #faf6f5;
   margin-right: 16px;
   border-style: solid;
 }
 
 #visit-store {
-  background-color: #FAF6F5;
+  background-color: #faf6f5;
   color: #192126;
   display: flex;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   align-items: center;
   text-align: center;
   border: none;
@@ -112,12 +109,11 @@
   border-radius: 62px;
   font-family: "Arimo", sans-serif;
   font-size: 16px;
-  border-color: #FAF6F5;
+  border-color: #faf6f5;
   cursor: pointer;
   font-weight: 700;
   margin-bottom: 12px;
 }
-
 
 #visit-store > #arrow {
   width: 8px;
@@ -127,7 +123,7 @@
   position: relative;
   transform: rotate(-45deg);
   margin: 0 6px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 #visit-store > #arrow::before {
@@ -140,7 +136,7 @@
   opacity: 0;
   bottom: calc(-2px / 2);
   transform: rotate(45deg);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   content: "";
   right: 0;
 }
@@ -159,17 +155,17 @@
   font-size: 16px;
   padding-top: 12px;
   margin-right: 40px;
-  font-weight:700;
+  font-weight: 700;
   line-height: 32px;
   letter-spacing: -0.304px;
   border: none;
   outline: none;
-  color: #FAF6F5;
+  color: #faf6f5;
   background-color: inherit;
 }
 
-#arrow-down{
-  border: solid #FAF6F5;
+#arrow-down {
+  border: solid #faf6f5;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -184,7 +180,7 @@
   position: absolute;
   background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   margin-top: 4px;
   font-weight: 700;
@@ -207,7 +203,7 @@
 }
 
 #dropdown-content a:hover {
-  background-color: #FDF5EB;
+  background-color: #fdf5eb;
 }
 
 #dropdown:hover #dropdown-content {
@@ -220,108 +216,199 @@
 
 /* trade/background section start */
 #trade-background {
-    background-image: url("/static/img/background-trade.png");
-    width: 1280px;
-    height: 300px;
+  background-image: url("/static/img/background-trade.png");
+  width: 1280px;
+  height: 300px;
 }
 
 #trade-text-align {
-    text-align: center;
-    float: left;
-    width: 803px;
-    margin-top: 55px;
+  text-align: center;
+  float: left;
+  width: 803px;
+  margin-top: 55px;
 }
 
 h1 {
-    color: var(--nav-text, #545859);
-    font-family: "Readex Pro", sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: -0.76px;
-    margin-bottom: 24px;
-    text-transform: uppercase;
+  color: var(--nav-text, #545859);
+  font-family: "Readex Pro", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.76px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
 }
 
 h2 {
-    color: #878787;
-    font-family: "Arimo", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: -0.38px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
+  color: #878787;
+  font-family: "Arimo", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.38px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 p {
-    color: #878787;
-    text-align: center;
-    font-family: "seravekregular", sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.456px;
+  color: #878787;
+  text-align: center;
+  font-family: "seravekregular", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.456px;
 }
 /* trade/background section end */
 
+/* looking to sell start */
+#looking2sell {
+  width: 100%;
+  text-align: center;
+}
+
+#sellh1 {
+  font-family: "Arimo";
+  color: #79955f;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#sellh2 {
+  font-family: "Readex Pro";
+  font-weight: medium;
+  font-size: 40px;
+  color: #545859;
+}
+
+#sellh3 {
+  font-family: "Seravek";
+  font-size: 24px;
+  color: #878787;
+}
+/* looking to sell end */
+
+/* condition, in season, men's, women's start*/
+#condition {
+  width: 100%;
+  margin: 5%;
+}
+
+.collapsiblec {
+  background-color: #ffffff;
+  color: #545859;
+  cursor: pointer;
+  padding: 50px;
+  width: 90%;
+  /*width: 100%;*/
+  border: none;
+  text-align: left;
+  padding-left: 0;
+  outline: none;
+  font-size: 24px;
+  font-family: "Readex Pro";
+}
+
+.active,
+.collapsiblec:hover {
+  background-color: #ffffff;
+}
+
+.collapsiblec::after {
+  content: "\002B";
+  color: #545859;
+  float: right;
+  font-family: "Readex Pro";
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "\2212";
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 80px auto;
+  grid-template-rows: auto auto;
+}
+
+.img-entry {
+  grid-row: 1 / span 2;
+}
+
+.entry-top {
+  font-family: "Readex Pro";
+  font-size: 26px;
+  font-weight: bold;
+  color: #545859;
+}
+
+.entry-bottom {
+  font-family: "Arimo";
+  font-size: 20px;
+  font-weight: bold;
+  color: #878787;
+}
+
+/* condition, in season, men's, women's end*/
+
 /* how does it work start */
-#how-does-it-work{
+#how-does-it-work {
   height: 704px;
   display: flex;
   padding: 48px 80px;
   justify-content: space-between;
   align-items: flex-start;
   align-self: stretch;
-  background: #FAF9F5;
+  background: #faf9f5;
 }
 
-#work-side1{
+#work-side1 {
   display: flex;
   width: 454px;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 40px;  
+  margin-top: 40px;
 }
 
-#work-side1 h1{
+#work-side1 h1 {
   color: #545859;
-font-family: "Readex Pro",  medium, sans-serif;
-font-size: 40px;
-font-weight: 500;
-line-height: 32px; /* 80% */
-letter-spacing: -0.76px;
+  font-family: "Readex Pro", medium, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 32px; /* 80% */
+  letter-spacing: -0.76px;
 }
 
-#work-side2{
+#work-side2 {
   width: 595px;
   margin-top: 32px;
-  height:500px;
+  height: 500px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#work-side2 h1{
+#work-side2 h1 {
   font-size: 26.3px;
   font-weight: 500;
   line-height: 26.3px;
   text-transform: none;
-  color:  #545859;
+  color: #545859;
   font-family: "Readex Pro", medium, sans-serif;
 }
 
-#store-bttn{
+#store-bttn {
   display: flex;
   justify-content: left;
   align-items: center;
   gap: 16px;
-  }
+}
 
-#store-hr{
+#store-hr {
   display: flex;
   padding: 8px 24px;
   justify-content: center;
@@ -340,15 +427,15 @@ letter-spacing: -0.76px;
   margin-top: 24px;
 }
 
-#schedule-button{
+#schedule-button {
   display: flex;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
   border-radius: 62px;
-  border: 1px solid #F26D36;
-  background: #F26D36;
-  color: #FFF;
+  border: 1px solid #f26d36;
+  background: #f26d36;
+  color: #fff;
   font-family: "Arimo", bold, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -358,136 +445,137 @@ letter-spacing: -0.76px;
   cursor: pointer;
 }
 
-#number-work h1{
-  font-family:'seravekmedium'; 
-  font-weight: bold; 
-  font-size: 48px; 
+#number-work h1 {
+  font-family: "seravekmedium";
+  font-weight: bold;
+  font-size: 48px;
   display: inline-block;
-  margin-right:26px;
+  margin-right: 26px;
 }
 
-#panel-group{
+#panel-group {
   padding: 20px;
-  width: 580px; 
+  width: 580px;
   border-radius: 20px;
-  background: #FFF; 
-  border:none; 
+  background: #fff;
+  border: none;
   cursor: pointer;
 }
 
-#panel-th1{
-  margin-left: 20px; 
+#panel-th1 {
+  margin-left: 20px;
   margin-right: 20px;
-  margin-top: 0px; 
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 /* how does it work end */
 
 /* What you earn start */
 #earn-titles {
-    text-align: center;
-    margin: 40px 0px;
+  text-align: center;
+  margin: 40px 0px;
 }
 
 h3 {
-    color: #F26D36;
-    text-align: center;
-    font-family: "Arimo", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 16px;
+  color: #f26d36;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 #earn-details {
-    margin: 32px auto;
-    width: 910px;
-    height: 64px;
+  margin: 32px auto;
+  width: 910px;
+  height: 64px;
 }
 
 #deals-container {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    width: 1018px;
-    margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  width: 1018px;
+  margin: 0px auto;
 }
 
 .deal {
-    width: 286px;
+  width: 286px;
 }
 
 .deal p {
-    font-style: italic;
+  font-style: italic;
 }
 
 .deal-sub {
-    height: 306px;
-    text-align: center;
-    border-radius: 16.438px;
-    margin-bottom: 48px;
-    /* shadow */
-    box-shadow: 0px 12.14285659790039px 30.357141494750977px -6.071428298950195px rgba(0, 0, 0, 0.10), 0px 6.071428298950195px 30.357141494750977px 0px rgba(0, 0, 0, 0.10), 0px 60.71428298950195px 303.5714111328125px -121.4285659790039px rgba(0, 0, 0, 0.20);
+  height: 306px;
+  text-align: center;
+  border-radius: 16.438px;
+  margin-bottom: 48px;
+  /* shadow */
+  box-shadow: 0px 12.14285659790039px 30.357141494750977px -6.071428298950195px rgba(0, 0, 0, 0.1),
+    0px 6.071428298950195px 30.357141494750977px 0px rgba(0, 0, 0, 0.1),
+    0px 60.71428298950195px 303.5714111328125px -121.4285659790039px rgba(0, 0, 0, 0.2);
 }
 
 .deal-sub h2 {
-    color: #545859;
+  color: #545859;
 }
 
 .deal-sub img {
-    width: 83px;
-    height: auto;
-    margin-top: 16px;
-    margin-bottom: 32px;
+  width: 83px;
+  height: auto;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 #most-popular {
-    display: flex;
-    padding: 8px 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
-    border-radius: 0px 0px 20px 20px;
-    background: #F26C34;
-    width: 222px;
-    margin: 0px auto;
-    margin-bottom: 48px;
+  display: flex;
+  padding: 8px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 0px 0px 20px 20px;
+  background: #f26c34;
+  width: 222px;
+  margin: 0px auto;
+  margin-bottom: 48px;
 }
 
 #most-popular h2 {
-    color:#fff;
-    text-transform: uppercase;
-    margin: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0px;
 }
 
 h4 {
-    color: #000;
-    font-family: "Readex Pro", sans-serif;
-    font-size: 60px;
-    font-weight: 700;
-    margin-top: 24px;
-    margin-bottom: 16px;
+  color: #000;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
 h5 {
-    color: #878787;
-    text-align: center;
-    font-family: "seravekregular";
-    font-size: 18px;
-    font-weight: 400;
+  color: #878787;
+  text-align: center;
+  font-family: "seravekregular";
+  font-size: 18px;
+  font-weight: 400;
 }
 
 strong {
-    color: #F26C34;
-    font-family: "seravekregular";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: -0.456px;
+  color: #f26c34;
+  font-family: "seravekregular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.456px;
 }
-
 
 /* What you earn end */
 
@@ -510,7 +598,8 @@ strong {
   color: #545859;
   cursor: pointer;
   padding: 50px;
-  width: 100%;
+  width: 95%;
+  /*width: 100%;*/
   border: none;
   text-align: left;
   padding-left: 0;
@@ -548,6 +637,7 @@ strong {
   font-family: "Readex Pro";
   color: #878787;
   font-size: 24px;
+  width: 1200px;
 }
 /*FAQ End */
 
