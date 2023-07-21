@@ -18,5 +18,9 @@ def contact():
         return "Your name is " + first_name + last_name
     return render_template("contact.html")
 
+@app.route('/trade')
+def trade():
+    return render_template("trade.html")
+
 if __name__=='__main__':
    app.run()
