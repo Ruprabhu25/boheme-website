@@ -15,12 +15,105 @@
     <link rel="stylesheet" href="/static/css/trade.css">
 </head>
 <body>
+  <!-- announcement-->
+  <div id="announcement">
+    <span id="a-icon">🏖️ </span>Ownership is on vacation! We are not currently conducting trade-ins until <span class="bold-font"> August 8th, 2023.</span> <a id ="underline"> Learn More </a>
+  </div>
+    <!--nav bar-->
+    <div id="nav-container">
+        <div id="nav-grid">
+            <div id="boheme-logo" onClick="location.href='homepage.html'"><img src="/static/img/boheme-white-logo.png"></div>
+            <div class="nav-item" onClick="location.href='homepage.html'">HOME</div>
+            <div class="nav-item">ABOUT</div>
+            <div class="nav-item">BUY-SELL-TRADE</div>
+            <div class="nav-item">GIFT GUIDE</div>
+            <div id="dropdown">
+                <button id="dropbtn">MEDIA
+                  <i id="arrow-down"></i>
+                </button>
+                <div id="dropdown-content">
+                  <a href="#">FUN PHOTOS</a>
+                  <a href="#">VIBIN' VIDEOS</a>
+                  <a href="#">IN THE NEWS</a>
+                  <a href="#">BLOG</a>
+                </div>
+              </div>
+            <button class="nav-button" id="get-in-touch" onClick="location.href='contact.html'">GET IN TOUCH</button>
+            <button id="visit-store">VISIT STORE <span id="arrow"></span></button>
+        </div>
+    </div>
     <div id="trade-background">
         <div id=trade-text-align>
             <h2>Summer season</h2>
             <h1>Declutter & Sell your summer items.</h1>
             <p>Summer dresses, short sleeve blouses, tank tops, skirts, shorts, etc.</p>
         </div>
+    </div>
+     <!--how does it work-->
+     <div id="how-does-it-work"> 
+      <div id ="work-side1"> 
+        <h2 style="display:inline-block; color:#F26D34;font-size:20px;"> 
+          <img style="height:24px;width:24px;margin-right:10px;"src="/static/img/timeicon.png"/>  ~ 15 minutes </h2>
+        <h1 style="text-transform: none; margin-bottom: 32px;"> How does it works?</h1>
+        <p style="text-align: left;">Other consignment stores require your clothing items to sell before you can get paid. </p>
+        <p style="text-align: left;">We disagree! If we think we can resell them, <span style="font-family:'seravekmedium'; color: #F26D34"> we buy your clothes from you</span>.</p>
+      </div>
+      <div id="work-side2">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <div class ="container"> 
+          <div class="panel-group" id="accordion">
+            <div id="panel-group"  class="panel panel-default">
+              <div class="panel-heading" style="background:#FFF;">
+                <h4 class="panel-title">
+                  <h1 id="panel-th1" data-toggle="collapse" data-parent="#accordion" href="#collapse1"> <span id="number-work">
+                    <h1> 01 </h1></span> Bring your Items</h1>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div style="border:none;" class="panel-body"><p style="text-align:left;"> 
+                  We serve our guests on a first come, first serve basis or by appointment during in-store hours.</p>
+                  <div id="store-bttn">
+                    <button id="store-hr" onClick="location.href='contact.html'">STORE HOURS</button>
+                  <button id="schedule-button" onClick="window.open('https://squareup.com/appointments/book/3srvschplnsg15/DYX6Q6CE3GKAW/services','_blank')"> SCHEDULE APPOINTMENT</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div id="panel-group" class="panel panel-default">
+              <div class="panel-heading" style="background: #FFF;">
+                <h4 class="panel-title">
+                  <h1 id="panel-th1" data-toggle="collapse" data-parent="#accordion" href="#collapse2"> 
+                    <span id="number-work"><h1> 02 </h1></span>  Recieve a Quote </h1>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div style="border:none;;" class="panel-body"><p style="text-align:left;">
+                  Our experienced team will inspect your clothes based on brand, condition, and unique style.  </p>
+                  <button id="store-hr">VIEW SELLING GUIDE</button>
+                </div>
+              </div>
+            </div>
+            <div id="panel-group" class="panel panel-default">
+              <div class="panel-heading" style="background: #FFF;">
+                <h4 class="panel-title">
+                  <h1 id="panel-th1" data-toggle="collapse" data-parent="#accordion" href="#collapse3"> 
+                    <span id="number-work"><h1> 03 </h1></span>  Choose to Trade, Sell, or Donate</h1>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div style="border:none;" class="panel-body"><p style="text-align:left;"> You must be 
+                  <span style="font-family: 'seravekmedium'; display:inline-block"> 18 years</span> 
+                  (or accompanied by an adult) & present a valid photo to sell items. </p>
+                  <button id="store-hr">VIEW PRICING GUIDE</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+      </div>
     </div>
     <div id="earn-titles">
         <h3>Lets Trade!</h3>
