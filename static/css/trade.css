@@ -228,7 +228,7 @@
   margin-top: 55px;
 }
 
-h1 {
+#trade-background h1, #look-sell h1, #earn-titles h1, #work-side1 h1{
   color: var(--nav-text, #545859);
   font-family: "Readex Pro", sans-serif;
   font-size: 40px;
@@ -237,10 +237,9 @@ h1 {
   line-height: 32px;
   letter-spacing: -0.76px;
   margin-bottom: 24px;
-  text-transform: uppercase;
 }
 
-h2 {
+#trade-text-align h2 {
   color: #878787;
   font-family: "Arimo", sans-serif;
   font-size: 20px;
@@ -278,22 +277,19 @@ h2 {
   text-transform: lowercase;
 }
 
-.collapsible-subtitle {
-  color: #878787;
-  text-align: left;
-  font-family: "Arimo";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px; /* 160% */
-  letter-spacing: -0.38px;
-  text-transform: uppercase;
-}
-
 .dropdown-sub {
   padding: 32px;
   background: #FFF8EA;
   width: 427px;
+}
+
+.dropdown-sub h3{
+  text-transform: uppercase;
+}
+
+.dropdown-sub p{
+  font-size: 18px;
+  text-align: left;
 }
 
 .year-round {
@@ -306,11 +302,13 @@ h2 {
   text-align: left;
 }
 
-.p-dropdown {
+.p-dropdown p{
   color: #5B6278;
   text-align: center;
   font-family: "seravekregular", sans-serif;
   font-size: 15px;
+  margin-left: 16px;
+  letter-spacing: -0.285px;
 }
 
 .list{
@@ -347,8 +345,6 @@ h2 {
 }
 
 .schedule-button {
-  width: 504px;
-  height: 72px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,11 +358,74 @@ h2 {
   text-transform: uppercase;
   margin: auto;
   margin-bottom: 32px;
+  border: none;
+  padding: 18px 32px;
+  margin-top: 80px;
 }
+
+/* looking to sell */
+#look-sell{
+  text-align: center;
+  padding: 0px 80px;
+}
+
+#sell-icon{
+  height:62px;
+  width: 62px;
+  margin-right: 26px;
+}
+
+#sell-subheader{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 939px;
+}
+
+#sell-subheader-drop{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1027px;
+}
+
+#sell-collapse{
+  display: flex;
+  padding: 45.15px 26.3px;
+}
+
+#sell-subheader h1, #sell-subheader-drop h1{
+  color: #545859;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 26.3px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+
+#sell-subheader h2{
+  color: #878787;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.38px;
+  text-transform: uppercase;
+  margin:0px;
+}
+
+#schedule1{
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /* how does it work start */
 #how-does-it-work{
-  height: 704px;
+  height: 804px;
   display: flex;
   padding: 48px 80px;
   justify-content: space-between;
@@ -383,15 +442,6 @@ h2 {
   margin-top: 40px;  
 }
 
-#work-side1 h1{
-  color: #545859;
-font-family: "Readex Pro",  medium, sans-serif;
-font-size: 40px;
-font-weight: 500;
-line-height: 32px; /* 80% */
-letter-spacing: -0.76px;
-}
-
 #work-side2{
   width: 595px;
   margin-top: 32px;
@@ -404,7 +454,6 @@ letter-spacing: -0.76px;
 #work-side2 h1{
   font-size: 26.3px;
   font-weight: 500;
-  line-height: 26.3px;
   text-transform: none;
   color:  #545859;
   font-family: "Readex Pro", medium, sans-serif;
@@ -453,9 +502,13 @@ letter-spacing: -0.76px;
 #modal-content {
   border-radius: 30px;
   height: 424px;
-  width: 1162px;
+  width: 1222px;
   display: inline-flex;
-  margin-left: 60px;
+  margin-left: 24px;
+}
+
+#modal-content p{
+  color: #5B6278;
 }
 
 #selling-frame{
@@ -478,15 +531,23 @@ letter-spacing: -0.76px;
   padding: 48px 32px;
 }
 
+#accept{
+  background-image: url(/static/img/accept.png), no-repeat;
+  height:12px;width:17px;margin-right:16px;
+}
+
+#deny{
+  background-image: url(/static/img/deny.png), no-repeat;
+  height:20px;width:20px;margin-right:16px;
+}
+
 #deny-frame{
   background: #F9E4E4;
   flex-direction: column;
   padding: 48px 32px;
-  width: 460px;
-  height: 424px;
+  width: 520px; height: 424px;
   border-radius: 0px 30px 30px 0px;
-  align-items: flex-start;
-  gap:28px;
+  align-items: flex-start; gap:28px;
 }
 
 #frame-a{
@@ -507,8 +568,8 @@ letter-spacing: -0.76px;
   justify-content: center;
   align-items: center;
   border-radius: 62px;
-  border: 1px solid #F26D36;
-  background: #F26D36;
+  border: 1px solid #F26D34;
+  background: #F26C34;
   color: #FFF;
   font-family: "Arimo", bold, sans-serif;
   font-size: 18px;
@@ -519,12 +580,14 @@ letter-spacing: -0.76px;
   cursor: pointer;
 }
 
+
 #number-work h1{
   font-family:'seravekmedium'; 
   font-weight: bold; 
   font-size: 48px; 
   display: inline-block;
   margin-right:26px;
+  color: #F26D34;
 }
 
 #panel-group{
@@ -534,14 +597,14 @@ letter-spacing: -0.76px;
   background: #FFF; 
   border:none; 
   cursor: pointer;
+  margin-bottom: 24px;
 }
 
 #panel-th1{
-  margin-left: 20px; 
-  margin-right: 20px;
   margin-top: 0px; 
   margin-bottom: 0px;
 }
+
 /* how does it work end */
 
 /* What you earn start */
@@ -550,8 +613,8 @@ letter-spacing: -0.76px;
   margin: 40px 0px;
 }
 
-h3 {
-  color: #f26d36;
+#look-sell h3, #earn-titles h3 {
+  color: #79955F;
   text-align: center;
   font-family: "Arimo", sans-serif;
   font-size: 20px;
@@ -595,6 +658,7 @@ h3 {
 
 .deal-sub h2 {
   color: #545859;
+  text-transform: uppercase;
 }
 
 .deal-sub img {
@@ -656,12 +720,15 @@ strong {
 /* FAQ Start */
 #faq {
   background-color: #ffffff;
-  margin-top: 184px;
-  padding-left: 48px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  margin-top: 96px;
+  padding: 16px 80px 0px 80px;
   width: 100%;
 }
+
+#faq p{
+  text-align: left;
+}
+
 .faqh {
   font-family: "Readex Pro";
   font-size: 40px;
@@ -688,7 +755,7 @@ strong {
 
 .collapsible::after {
   content: "\002B";
-  color: #f26d36;
+  color: #f26d34;
   float: right;
   font-family: "Readex Pro";
   margin-left: 5px;
@@ -713,9 +780,41 @@ strong {
 }
 /*FAQ End */
 
+/*get in touch start*/
+
+#get-in-touch-frame-bot{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 40px;
+  background-color: none;
+}
+
+#get-in-touch-bot{
+  display: flex;
+  padding: 0px 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+#contact-bold{
+color: #F26D34;
+font-family: 'seravekregular';
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: -0.456px;
+text-decoration: none;
+}
+
 /*footer start*/
 #footer {
-  background: #f26d36;
+  background: #F26C34;
   color: #ffffff;
   padding-left: 48px;
   padding-top: 16px;
@@ -788,7 +887,7 @@ a:hover {
 }
 
 #email-input {
-  background-color: #f26d36;
+  background-color: #F26C34;
   color: white;
   border: none;
   border-bottom: 2px solid white;
@@ -806,14 +905,14 @@ a:hover {
 }
 
 #email-button {
-  color: #f26d36;
+  color: #F26C34;
   font-family: "seravekmedium";
   font-weight: bold;
   font-size: 20px;
   width: 147px;
   height: 48px;
   border-radius: 62px;
-  border-color: #f26d36;
+  border-color: #F26C34;
   border-style: solid;
   background: #fff;
   font-size: 16px;
@@ -885,5 +984,9 @@ a:hover {
   padding-bottom: 16px;
   letter-spacing: -0.304px;
   text-transform: capitalize;
+}
+
+#footer p{
+  text-align: left;
 }
 /* footer end */
