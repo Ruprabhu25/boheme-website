@@ -265,6 +265,9 @@ p {
 /* trade/background section end */
 
 /* condition */
+#condition {
+  padding: 40px 80px 0px 80px;
+}
 
 h2 {
   color: var(--nav-text, #545859);
@@ -272,35 +275,81 @@ h2 {
   font-size: 26.3px;
   font-weight: 700;
   margin-bottom: 16px;
+  text-transform: lowercase;
 }
 
 .dropdown-sub {
-  margin: 32px;
+  padding: 32px;
   background: #FFF8EA;
+  width: 427px;
 }
 
 .year-round {
   background: #F9FAFB;
+  width: 720px;
 }
 
 .sell-dropdown-title {
-  margin-bottom: 16px;
+  margin: 0px 0px 16px 0px;
   text-align: left;
+}
+
+.p-dropdown {
+  color: #5B6278;
+  text-align: center;
+  font-family: "seravekregular", sans-serif;
+  font-size: 15px;
 }
 
 .list{
   padding: 0;
   margin: 0;
+  margin-left: 16px;
   list-style-type: none;
 }
 .check{
-  background: url('../img/check.png') no-repeat left top;
-  height: 34px;
+  list-style-image: url('../img/check.png');
+  /*background: url('../img/check.png') no-repeat left top;*/
+  height: 14.7px;
   padding-left: 16px;
+  color: #5B6278;
+  font-family: "seravekregular", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  margin-bottom: 16px;
 }
 
 #condition {
   background-color: #ffffff;
+}
+
+.flex-dropdown {
+  display: flex;
+  flex-direction: row;
+}
+
+#schedule-div {
+  margin: 32px 0px;
+}
+
+.schedule-button {
+  width: 504px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 62px;
+  background: #F26D34;
+  color: white;
+  color: #FFF;
+  font-family: "Arimo", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: auto;
+  margin-bottom: 32px;
 }
 
 /* how does it work start */
