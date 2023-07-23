@@ -545,12 +545,12 @@ gap: 16px;
   .orangead {
     font-family: "Seravek", sans-serif;
     font-weight: bold;
-    color: #f26d36;
+    color: #F26C34;
     display: inline-block;
   }
   .linktext {
     font-family: "Arimo", sans-serif;
-    color: #f26d36;
+    color: #F26C34;
   }
   .invbutton {
     display: flex;
@@ -773,8 +773,8 @@ display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 62px;
-    border: 1px solid #F26D36;
-    background: #F26D36;
+    border: 1px solid #F26C34;
+    background: #F26C34;
     color: #FFF;
     font-family: "Arimo", sans-serif;
     font-size: 18px;
@@ -894,7 +894,7 @@ display: flex;
 
 /*footer start*/
 #footer {
-    background: #F26D36;    
+    background: #F26C34;    
     color: #ffffff;
     padding-left: 48px;
     padding-top: 16px;
@@ -964,7 +964,7 @@ a:hover {color:white}
 }
 
 #email-input {
-    background-color: #F26D36;
+    background-color: #F26C34;
     color: white;
     border: none;
     border-bottom: 2px solid white;
@@ -982,14 +982,14 @@ a:hover {color:white}
 }
 
 #email-button {
-    color: #F26D36;
+    color: #F26C34;
     font-family: 'seravekmedium';
     font-weight: bold;
     font-size: 20px;
     width: 147px;
     height: 48px;
     border-radius: 62px;
-    border-color: #F26D36;
+    border-color: #F26C34;
     border-style: solid;
     background: #FFF;
     font-size: 16px;
