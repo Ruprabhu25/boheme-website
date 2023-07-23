@@ -217,20 +217,25 @@
 
 /*nav bar end*/
 
+#contact-img-containter img{ 
+  width: 100%;
+  height: 300px;
+}
 
 /*Stop By Start*/
 #stop-by-title {
-  text-align: center;
   margin-top: 80px;
   margin-bottom: 56px;
+  margin-left: 80px;
   width: 100%;
 }
 
 h1 {
   color: #545859;
   font-family: "Readex Pro", sans-serif;
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 500;
+  margin-bottom: 48px;
 }
 
 h2 {
@@ -365,9 +370,9 @@ input[type="checkbox"] {
     width: 124px;
     height: 48px;
     border-radius: 62px;
-    border-color: #F26D36;
+    border-color: #F26C34;
     border-style: solid;
-    background: #F26D36;
+    background: #F26C34;
     font-size: 16px;
     cursor: pointer;
     border: none;
@@ -408,7 +413,7 @@ input[type="checkbox"] {
 
 .collapsible::after {
   content: "\002B";
-  color: #f26d36;
+  color: #F26C34;
   float: right;
   font-family: "Readex Pro";
   margin-left: 5px;
@@ -456,7 +461,7 @@ a:active {
 
 /*footer start*/
 #footer {
-  background: #f26d36;
+  background: #F26C34;
   color: #ffffff;
   padding-left: 48px;
   padding-top: 16px;
@@ -529,7 +534,7 @@ a:hover {
 }
 
 #email-input {
-  background-color: #f26d36;
+  background-color: #F26C34;
   color: white;
   border: none;
   border-bottom: 2px solid white;
@@ -547,14 +552,14 @@ a:hover {
 }
 
 #email-button {
-  color: #f26d36;
+  color: #F26C34;
   font-family: "seravekmedium";
   font-weight: bold;
   font-size: 20px;
   width: 147px;
   height: 48px;
   border-radius: 62px;
-  border-color: #f26d36;
+  border-color: #F26C34;
   border-style: solid;
   background: #fff;
   font-size: 16px;
