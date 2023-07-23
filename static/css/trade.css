@@ -278,6 +278,18 @@ h2 {
   text-transform: lowercase;
 }
 
+.collapsible-subtitle {
+  color: #878787;
+  text-align: left;
+  font-family: "Arimo";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 160% */
+  letter-spacing: -0.38px;
+  text-transform: uppercase;
+}
+
 .dropdown-sub {
   padding: 32px;
   background: #FFF8EA;
