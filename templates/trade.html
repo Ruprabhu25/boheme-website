@@ -57,7 +57,7 @@
         We don't accepts brand such as...</p>
       </div>    
     <div id="condition">
-      <button id = "sell-collapse" type="button" class="collapsible">
+      <button id = "sell-collapse" type="button" class="collapsiblegrey">
         <img id="sell-icon" src="/static/img/conditionicon.png"/> 
         <div id="sell-subheader"> 
           <h1> condition </h1>
@@ -102,7 +102,7 @@
           </div>
         </div>
       </div>
-      <button id = "sell-collapse" type="button" class="collapsible">
+      <button id = "sell-collapse" type="button" class="collapsiblegrey">
         <img id="sell-icon" src="/static/img/seasonicon.png"/> 
         <div id="sell-subheader"> 
           <h1> in-season </h1>
@@ -112,7 +112,7 @@
       <div class="content">
         <p>Sample text, content, or links to be placed here.</p>
       </div>
-      <button id = "sell-collapse" type="button" class="collapsible">
+      <button id = "sell-collapse" type="button" class="collapsiblegrey">
         <div id="sell-subheader-drop"> 
           <h1> womens </h1>
         </div>
@@ -158,7 +158,7 @@
           </div>
         </div>
       </div>
-      <button id = "sell-collapse" type="button" class="collapsible">
+      <button id = "sell-collapse" type="button" class="collapsiblegrey">
         <div id="sell-subheader-drop"> 
           <h1> mens </h1>
         </div>
@@ -203,7 +203,7 @@
           </div>
         </div>
       </div>
-      <button id = "sell-collapse" type="button" class="collapsible">
+      <button id = "sell-collapse" type="button" class="collapsiblegrey">
         <img id="sell-icon" src="/static/img/needleicon.png"/> 
         <div id="sell-subheader"> 
           <h1> premium </h1>
@@ -223,6 +223,22 @@
           </div>
         </div>
       </div>
+      <script>
+        var coll = document.getElementsByClassName("collapsiblegrey");
+        var i;
+  
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
       <div id="schedule-div">
         <button class="schedule-button" onClick="window.open('https://squareup.com/appointments/book/3srvschplnsg15/DYX6Q6CE3GKAW/services','_blank')">Schedule a Trade in appointment</button>
         <p style="font-style: italic; margin-bottom: 88px;">We reserve the right to reject items deemed unsuitable.</p>

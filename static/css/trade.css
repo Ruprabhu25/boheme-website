@@ -228,7 +228,10 @@
   margin-top: 55px;
 }
 
-#trade-background h1, #look-sell h1, #earn-titles h1, #work-side1 h1{
+#trade-background h1,
+#look-sell h1,
+#earn-titles h1,
+#work-side1 h1 {
   color: var(--nav-text, #545859);
   font-family: "Readex Pro", sans-serif;
   font-size: 40px;
@@ -279,21 +282,21 @@ h2 {
 
 .dropdown-sub {
   padding: 32px;
-  background: #FFF8EA;
+  background: #fff8ea;
   width: 427px;
 }
 
-.dropdown-sub h3{
+.dropdown-sub h3 {
   text-transform: uppercase;
 }
 
-.dropdown-sub p{
+.dropdown-sub p {
   font-size: 18px;
   text-align: left;
 }
 
 .year-round {
-  background: #F9FAFB;
+  background: #f9fafb;
   width: 720px;
 }
 
@@ -302,8 +305,8 @@ h2 {
   text-align: left;
 }
 
-.p-dropdown p{
-  color: #5B6278;
+.p-dropdown p {
+  color: #5b6278;
   text-align: center;
   font-family: "seravekregular", sans-serif;
   font-size: 15px;
@@ -311,18 +314,18 @@ h2 {
   letter-spacing: -0.285px;
 }
 
-.list{
+.list {
   padding: 0;
   margin: 0;
   margin-left: 16px;
   list-style-type: none;
 }
-.check{
-  list-style-image: url('../img/check.png');
+.check {
+  list-style-image: url("../img/check.png");
   /*background: url('../img/check.png') no-repeat left top;*/
   height: 14.7px;
   padding-left: 16px;
-  color: #5B6278;
+  color: #5b6278;
   font-family: "seravekregular", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -349,9 +352,9 @@ h2 {
   justify-content: center;
   align-items: center;
   border-radius: 62px;
-  background: #F26D34;
+  background: #f26d34;
   color: white;
-  color: #FFF;
+  color: #fff;
   font-family: "Arimo", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -364,37 +367,70 @@ h2 {
 }
 
 /* looking to sell */
-#look-sell{
+#look-sell {
   text-align: center;
   padding: 0px 80px;
 }
 
-#sell-icon{
-  height:62px;
+.collapsiblegrey {
+  background-color: #ffffff;
+  color: #545859;
+  cursor: pointer;
+  padding: 50px;
+  width: 90%;
+  /*width: 100%;*/
+  border: none;
+  text-align: left;
+  padding-left: 0;
+  outline: none;
+  font-size: 24px;
+  font-family: "Readex Pro";
+}
+
+.active,
+.collapsiblegrey:hover {
+  background-color: #ffffff;
+}
+
+.collapsiblegrey::after {
+  content: "\002B";
+  color: #545859;
+  float: right;
+  font-family: "Readex Pro";
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "\2212";
+}
+
+#sell-icon {
+  height: 62px;
   width: 62px;
   margin-right: 26px;
 }
 
-#sell-subheader{
+#sell-subheader {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 939px;
 }
 
-#sell-subheader-drop{
+#sell-subheader-drop {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 1027px;
 }
 
-#sell-collapse{
+#sell-collapse {
   display: flex;
   padding: 45.15px 26.3px;
 }
 
-#sell-subheader h1, #sell-subheader-drop h1{
+#sell-subheader h1,
+#sell-subheader-drop h1 {
   color: #545859;
   font-family: "Readex Pro", sans-serif;
   font-size: 26.3px;
@@ -404,7 +440,7 @@ h2 {
   margin-bottom: 8px;
 }
 
-#sell-subheader h2{
+#sell-subheader h2 {
   color: #878787;
   text-align: center;
   font-family: "Arimo", sans-serif;
@@ -413,60 +449,59 @@ h2 {
   font-weight: 700;
   letter-spacing: -0.38px;
   text-transform: uppercase;
-  margin:0px;
+  margin: 0px;
 }
 
-#schedule1{
+#schedule1 {
   justify-content: center;
   align-items: center;
 }
 
-
-
 /* how does it work start */
-#how-does-it-work{
+#how-does-it-work {
   height: 804px;
   display: flex;
   padding: 48px 80px;
   justify-content: space-between;
   align-items: flex-start;
   align-self: stretch;
-  background: #FAF9F5;
+  background: #faf9f5;
 }
 
-#work-side1{
+#work-side1 {
   display: flex;
   width: 454px;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 40px;  
+  margin-top: 40px;
 }
 
-#work-side2{
+#work-side2 {
   width: 595px;
   margin-top: 32px;
-  height:500px;
+  height: 500px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#work-side2 h1{
+#work-side2 h1 {
   font-size: 26.3px;
   font-weight: 500;
   text-transform: none;
-  color:  #545859;
+  color: #545859;
   font-family: "Readex Pro", medium, sans-serif;
 }
 
-#store-bttn{
+#store-bttn {
   display: flex;
   justify-content: left;
   align-items: center;
   gap: 16px;
-  }
+}
 
-#store-hr, #store-hr1{
+#store-hr,
+#store-hr1 {
   display: flex;
   padding: 8px 24px;
   justify-content: center;
@@ -485,18 +520,18 @@ h2 {
   margin-top: 24px;
 }
 
-#modal{
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
   padding-top: 250px;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #modal-content {
@@ -507,70 +542,77 @@ h2 {
   margin-left: 24px;
 }
 
-#modal-content p{
-  color: #5B6278;
+#modal-content p {
+  color: #5b6278;
 }
 
-#selling-frame{
+#selling-frame {
   width: 352px;
   height: 424px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #FFF;
+  background: #fff;
   border-radius: 30px 0px 0px 30px;
   padding: 48px 32px;
 }
 
-#accept-frame{
+#accept-frame {
   flex-direction: column;
-  background: #E4F9EB;
+  background: #e4f9eb;
   width: 350px;
   height: 424px;
   padding: 48px 32px;
 }
 
-#accept{
+#accept {
   background-image: url(/static/img/accept.png), no-repeat;
-  height:12px;width:17px;margin-right:16px;
+  height: 12px;
+  width: 17px;
+  margin-right: 16px;
 }
 
-#deny{
+#deny {
   background-image: url(/static/img/deny.png), no-repeat;
-  height:20px;width:20px;margin-right:16px;
+  height: 20px;
+  width: 20px;
+  margin-right: 16px;
 }
 
-#deny-frame{
-  background: #F9E4E4;
+#deny-frame {
+  background: #f9e4e4;
   flex-direction: column;
   padding: 48px 32px;
-  width: 520px; height: 424px;
+  width: 520px;
+  height: 424px;
   border-radius: 0px 30px 30px 0px;
-  align-items: flex-start; gap:28px;
+  align-items: flex-start;
+  gap: 28px;
 }
 
-#frame-a{
+#frame-a {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
 }
 
-#frame-a1, #frame-a2{
+#frame-a1,
+#frame-a2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-#schedule-button{
+#schedule-button {
   display: flex;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
   border-radius: 62px;
-  border: 1px solid #F26D34;
-  background: #F26C34;
-  color: #FFF;
+  border: 1px solid #f26d34;
+  background: #f26c34;
+  color: #fff;
   font-family: "Arimo", bold, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -580,28 +622,27 @@ h2 {
   cursor: pointer;
 }
 
-
-#number-work h1{
-  font-family:'seravekmedium'; 
-  font-weight: bold; 
-  font-size: 48px; 
+#number-work h1 {
+  font-family: "seravekmedium";
+  font-weight: bold;
+  font-size: 48px;
   display: inline-block;
-  margin-right:26px;
-  color: #F26D34;
+  margin-right: 26px;
+  color: #f26d34;
 }
 
-#panel-group{
+#panel-group {
   padding: 20px;
-  width: 580px; 
+  width: 580px;
   border-radius: 20px;
-  background: #FFF; 
-  border:none; 
+  background: #fff;
+  border: none;
   cursor: pointer;
   margin-bottom: 24px;
 }
 
-#panel-th1{
-  margin-top: 0px; 
+#panel-th1 {
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
@@ -613,8 +654,9 @@ h2 {
   margin: 40px 0px;
 }
 
-#look-sell h3, #earn-titles h3 {
-  color: #79955F;
+#look-sell h3,
+#earn-titles h3 {
+  color: #79955f;
   text-align: center;
   font-family: "Arimo", sans-serif;
   font-size: 20px;
@@ -725,7 +767,7 @@ strong {
   width: 100%;
 }
 
-#faq p{
+#faq p {
   text-align: left;
 }
 
@@ -782,7 +824,7 @@ strong {
 
 /*get in touch start*/
 
-#get-in-touch-frame-bot{
+#get-in-touch-frame-bot {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -792,7 +834,7 @@ strong {
   background-color: none;
 }
 
-#get-in-touch-bot{
+#get-in-touch-bot {
   display: flex;
   padding: 0px 80px;
   flex-direction: column;
@@ -801,20 +843,20 @@ strong {
   align-self: stretch;
 }
 
-#contact-bold{
-color: #F26D34;
-font-family: 'seravekregular';
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: 32px;
-letter-spacing: -0.456px;
-text-decoration: none;
+#contact-bold {
+  color: #f26d34;
+  font-family: "seravekregular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.456px;
+  text-decoration: none;
 }
 
 /*footer start*/
 #footer {
-  background: #F26C34;
+  background: #f26c34;
   color: #ffffff;
   padding-left: 48px;
   padding-top: 16px;
@@ -887,7 +929,7 @@ a:hover {
 }
 
 #email-input {
-  background-color: #F26C34;
+  background-color: #f26c34;
   color: white;
   border: none;
   border-bottom: 2px solid white;
@@ -905,14 +947,14 @@ a:hover {
 }
 
 #email-button {
-  color: #F26C34;
+  color: #f26c34;
   font-family: "seravekmedium";
   font-weight: bold;
   font-size: 20px;
   width: 147px;
   height: 48px;
   border-radius: 62px;
-  border-color: #F26C34;
+  border-color: #f26c34;
   border-style: solid;
   background: #fff;
   font-size: 16px;
@@ -986,7 +1028,7 @@ a:hover {
   text-transform: capitalize;
 }
 
-#footer p{
+#footer p {
   text-align: left;
 }
 /* footer end */
