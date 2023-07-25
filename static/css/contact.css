@@ -251,6 +251,7 @@ p {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 #stop-by-info-container {
@@ -263,17 +264,43 @@ p {
 #stop-by-left {
   margin-right: 64px;
   text-align: center;
+  position: relative;
+}
+
+.directions {
+  position: absolute;
+  top: 250px;
+  left: 272px;
+  color: #FAFAFA;
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'seravekmedium';
+  font-weight: bold;
+  width: 197px;
+  height: 48px;
+  border-radius: 62px;
+  border-color: #F26C34;
+  border-style: solid;
+  background: #F26C34;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  margin-top: 32px;
+  padding: 8px 32px;
 }
 
 #stop-by-left img {
   width: 744px;
-  height: auto;
+  height: 370px;
   border-radius: 20px;
   margin-bottom: 24px;
 }
 
 .stop-by {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 #icon-c{
@@ -351,7 +378,6 @@ input[type="checkbox"] {
 .g-recaptcha {
   transform: scale(1.5);
   transform-origin: 0 0;
-  margin-bottom: 32px;
 }
 
 .grecaptcha-badge {
@@ -391,6 +417,7 @@ input[type="checkbox"] {
   font-family: "Readex Pro";
   font-size: 40px;
   color: #545859;
+  margin-bottom: 0;
 }
 .collapsible {
   background-color: #ffffff;
