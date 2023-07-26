@@ -313,6 +313,63 @@
 /*sustainable styles*/
 .sustainable-styles {
   background-color: #ffffff;
+  display: flex;
+}
+
+.sustainableimg {
+  margin: 2%;
+  /*display: inline-block;*/
+  float: left;
+}
+
+.our-story {
+  margin: 2%;
+  /*float: right;*/
+  /*display: inline-block;*/
+  background-color: #c0e08e;
+}
+
+.story-h1 {
+  margin: 2%;
+  margin-top: 5%;
+  margin-left: 5%;
+  color: #f26c34;
+  font-family: "Arimo";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.story-h2 {
+  margin: 2%;
+  margin-left: 5%;
+  color: #000000;
+  font-family: "Readex Pro";
+  font-size: 40px;
+}
+
+.story-content {
+  margin: 2%;
+  margin-left: 5%;
+  margin-top: 5%;
+  color: #000000;
+  font-family: "Seravek";
+  font-size: 24px;
+}
+
+.story-btn {
+  position: relative;
+  margin-left: 20%;
+  margin-top: 10%;
+  align-items: center;
+  background-color: #f26c34;
+  border-radius: 20px;
+  height: 35px;
+  width: 300px;
+  border: none;
+  color: #ffffff;
+  font-family: "Arimo";
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /*what we believe in*/
