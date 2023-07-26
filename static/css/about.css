@@ -1,3 +1,21 @@
+/*FontFace*/
+@font-face {
+    font-family: "seravekmedium";
+    src: url("seravek-medium-webfont.woff2") format("woff2"),
+      url("seravek-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "seravekregular";
+    src: url("seravek-webfont.woff2") format("woff2"),
+      url("seravek-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*FontFace*/
+
 h5 {
     color: #79955F;
     text-align: center;
@@ -5,8 +23,7 @@ h5 {
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px; /* 160% */
-    letter-spacing: -0.38px;
+    margin: 0px 0px 16px 0px;
     text-transform: uppercase;
 }
 
@@ -17,6 +34,205 @@ h2 {
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 60px */
-    letter-spacing: -0.88px;
+    margin: 0px;
 }
+
+.staff-title {
+    margin-bottom: 64px;
+}
+
+.staff-array {
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: 64px;
+}
+
+.staff-picture {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    background: #C0E08E;
+    border-radius: 17px;
+}
+
+/*footer start*/
+#footer {
+    background: #F26C34;
+    color: #ffffff;
+    padding-left: 48px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+  }
+  
+  #footer-top {
+    padding-left: 24px;
+    padding-bottom: 32px;
+    padding-top: 24px;
+    /* padding-top: 24px; new change */
+    width: 1184px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid white;
+  }
+  
+  #footer-info {
+    width: 50%;
+    height: 104px;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  /*changed font*/
+  .bold-text-footer {
+    color: #ffffff;
+    font-family: Arimo, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.456px;
+  }
+  
+  .text-footer {
+    font-family: "seravekregular";
+    color: #ffffff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.38px;
+  }
+  
+  .text-footer-right {
+    padding-bottom: 24px;
+    cursor: pointer;
+  }
+  
+  .title-text-footer {
+    font-family: "seravekregular";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.38px;
+    margin-bottom: 0;
+    color: white;
+  }
+  
+  #email-footer {
+    width: 50%;
+    height: 104px;
+    align-items: center;
+    padding-top: 26px;
+  }
+  
+  #email-input {
+    background-color: #F26C34;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 353px;
+    height: 33px;
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+  
+  ::placeholder {
+    color: #fff;
+    font-family: "seravekregular";
+    font-size: 20px;
+    font-style: normal;
+  }
+  
+  #email-button {
+    color: #F26C34;
+    font-family: "seravekmedium";
+    font-weight: bold;
+    font-size: 20px;
+    width: 147px;
+    height: 48px;
+    border-radius: 62px;
+    border-color: #F26C34;
+    border-style: solid;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.38px;
+  }
+  
+  #footer-bottom {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 32px;
+    /* padding-bottom: 32px;  new change */
+  }
+  
+  #footer-logo-container {
+    color: #fafafa;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+    align-items: center;
+    height: 90px;
+  }
+  
+  #footer-logo {
+    width: 184px;
+    height: auto;
+    margin-right: 16px;
+    filter: brightness(0) invert(1);
+  }
+  
+  #footer-location-hours {
+    margin-right: 125px;
+  }
+  
+  #footer-boheme {
+    margin-right: 40px;
+  }
+  
+  #footer-services {
+    margin-right: 40px;
+  }
+  
+  #footer-media {
+    margin-right: 40px;
+  }
+  
+  .footer-follow-us {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footer-icon {
+    width: 50px;
+    height: auto;
+  }
+  
+  /* new change */
+  #copyright-footer {
+    text-align: center;
+    font-family: "seravekregular";
+    font-size: 16px;
+    padding-bottom: 16px;
+    letter-spacing: -0.304px;
+    text-transform: capitalize;
+  }
+  /* footer end */
+  
