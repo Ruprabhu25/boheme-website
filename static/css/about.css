@@ -375,6 +375,47 @@
 /*what we believe in*/
 .values {
   background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.valueheader1 {
+  color: #79955f;
+  font-family: "Arimo";
+  font-weight: bold;
+  font-size: 20px;
+  margin: 2%;
+}
+
+.valueheader2 {
+  color: #000000;
+  font-family: "Readex Pro";
+  font-size: 40px;
+  margin: 2%;
+}
+
+.content-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 2%;
+  column-gap: 100px;
+}
+
+.item-container {
+  font-family: "Readex Pro";
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.item-image {
+  align-self: center;
+}
+
+.item-content {
+  font-family: "Seravek";
+  font-size: 24px;
+  color: #585858;
 }
 
 /*Boheme's stylish staff*/
