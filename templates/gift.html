@@ -166,7 +166,10 @@
         <div id="gift-section1">
             <h2 style="margin-bottom: 16px; text-align: left;"> Not sure what to buy? </h2>
             <h1 style="font-size: 40px;"> Gift Cards </h1>
-            <img id ="g-graphic"src="/static/img/giftcard-graphic.png"/>
+            <!-- <img id ="g-graphic" src="/static/img/giftcard-graphic.png"/> -->
+            <div class="containered">
+              <img id="g-graphic" src="/static/img/gift/occasion-1.png">
+            </div>
             <div class="info-e visible"> 
               <div id="gift-card-info">
                 <h3 style="margin-bottom: 24px;">  eGift Card Includes... </h3>
@@ -183,8 +186,18 @@
                 </ul>
             </div>
             </div>
-            <div class="info-p hidden"> 
-              <h3 style="margin-bottom: 24px;">  Physical Card Includes... </h3>
+            <div class="info-p hidden">
+              <div id="physical-card-info"> 
+                <h3 style="margin-bottom: 24px;">  Physical Card Includes... </h3>
+                <ul class="list">
+                  <li> <p style="display:inline-block;"> <img id="accept" src="/static/img/accept.png"/>Purchase in-store only </p> </li>
+                  <li><p style="display:inline-block;"> <img id="accept" src="/static/img/accept.png"/> Sustainable and reloadable (Saves plastic) </p></li>
+                  <li><p style="display:inline-block;"> <img id="accept" src="/static/img/accept.png"/> Flexible mail delivery options* </p></li>
+                  <li> <p style="display:inline-block;"> <img id="accept" src="/static/img/accept.png"/>Tangible and personal gifting experience </p> </li>
+                  <li><p style="display:inline-block;"> <img id="accept" src="/static/img/accept.png"/> Offline accessibility </p></li>
+                  <li><p style="display:inline-block;"> <img id="accept" src="/static/img/accept.png"/> Works in-store and online </p></li>
+                  <li> <p> *Please inquire if interested in physically mailing cards to you or directly to gift recipient.  </p></li>              </ul>
+              </div> 
             </div>   
           </div>
           <div id="gift-section2">
@@ -193,7 +206,10 @@
               <button id="btn2" style="border-radius: 0px 6px 6px 0px;" class="btn actives">eGift Cards</button>
             </div>
             <div class="app-div1 hidden">
-              <p style="margin-top: 50px"> insert physical info here and replace the left section </p>
+              <p style="display:inline-block; margin-top: 50px; color: #F26D36;"> <img id="card" src="/static/img/giftcard-icon.png"/> 
+                Best for traditional and sentimental gifters </p>
+              <p style="text-align: left; margin-top: 32px;"> No problem! We got you covered with new clothes and accessories in-store everyday 
+                for a wide range of styles. Grab a gift card to make the best choice easy! </p>
             </div>
               
             <div class="app-div2 visible">
@@ -205,66 +221,63 @@
                 <div style="padding-top: 32px; padding-bottom: 32px;"> 
                   <h1 style="margin-bottom:24px;"> Birthday </h1>
                   <div id="card-c-section"> 
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
+                    <div class="circle-card">  <img class ="contain-c" src="/static/img/gift/birthday-1.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card"> <img class ="contain-c" src="/static/img/gift/birthday-2.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card"> <img class ="contain-c" src="/static/img/gift/birthday-3.png" onclick="giftFunction(this)";/></div>
+                    <div class="circle-card">  <img class ="contain-c" src="/static/img/gift/birthday-4.png" onclick="giftFunction(this)";/></div>
+                    <div class="circle-card"> <img class ="contain-c" src="/static/img/gift/birthday-5.png" onclick="giftFunction(this)";/> </div>
                   </div>
                   <div style="margin-bottom:0px;"id="card-c-section"> 
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
+                    <div class="circle-card"> <img class ="contain-c" src="/static/img/gift/birthday-6.png" onclick="giftFunction(this)";/></div>
+                    <div class="circle-card"> <img class ="contain-c" src="/static/img/gift/birthday-7.png" onclick="giftFunction(this)";/></div>
+                    <div class="circle-card"> <img class ="contain-c" src="/static/img/gift/birthday-8.png" onclick="giftFunction(this)";/></div>
+                    <div class="circle-card">  <img class ="contain-c " src="/static/img/gift/birthday-9.png" onclick="giftFunction(this)";/> </div>
                   </div>
                 </div> 
                 <div class="line"></div>
                 <div style="padding-top: 32px; padding-bottom: 32px;"> 
                   <h1 style="margin-bottom:24px;"> Any Occasion </h1>
                   <div id="card-c-section"> 
-                    <div class="circle-card activated"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                  </div>
+                    <div class="circle-card activated"> <img class ="contain-c " src="/static/img/gift/occasion-1.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/occassion-2.png" onclick="giftFunction(this)";/></div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/occassion-3.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/occassion-4.png" onclick="giftFunction(this)";/></div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/occassion-5.png" onclick="giftFunction(this)";/> </div>                  </div>
                   <div style="margin-bottom:0px;"id="card-c-section"> 
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/occassion-6.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/occassion-7.png" onclick="giftFunction(this)";/></div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/occassion-8.png" onclick="giftFunction(this)";/></div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/occassion-9.png" onclick="giftFunction(this)";/></div>
                   </div>
                 </div> 
                 <div class="line"></div>
                 <div style="padding-top: 32px; padding-bottom: 32px;"> 
                   <h1 style="margin-bottom:24px;"> Appreciation </h1>
                   <div style="margin-bottom:0px;" id="card-c-section"> 
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/appreciation-1.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/appreciation-2.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/appreciation-3.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card"> <img class ="contain-c " src="/static/img/gift/appreciation-4.png" onclick="giftFunction(this)";/> </div>
                   </div>
                 </div>
                 <div class="line"></div> 
                 <div style="padding-top: 32px; padding-bottom: 32px;"> 
                   <h1 style="margin-bottom:24px;"> Celebration </h1>
                   <div style="margin-bottom:0px;"id="card-c-section"> 
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
+                    <div class="circle-card">  <img class ="contain-c" src="/static/img/gift/celebration-1.png" onclick="giftFunction(this)";/></div>
+                    <div class="circle-card"> <img class ="contain-c" src="/static/img/gift/celebration-2.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card">  <img class ="contain-c" src="/static/img/gift/celebration-3.png" onclick="giftFunction(this)";/></div>
+                    <div class="circle-card"> <img class ="contain-c" src="/static/img/gift/celebration-4.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card"> <img class ="contain-c" src="/static/img/gift/celebration-5.png" onclick="giftFunction(this)";/></div>
                   </div>
                 </div> 
                 <div class="line"></div>
                 <div style="padding-top: 32px; padding-bottom: 32px;"> 
                   <h1 style="margin-bottom:24px;"> Encouragement </h1>
                   <div style="margin-bottom:0px;"id="card-c-section"> 
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
-                    <div class="circle-card"> </div>
+                    <div class="circle-card"> <img class ="contain-c" src="/static/img/gift/encouragement-1.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card">  <img class ="contain-c" src="/static/img/gift/encouragement-2.png" onclick="giftFunction(this)";/> </div>
+                    <div class="circle-card">  <img class ="contain-c" src="/static/img/gift/encouragement-3.png" onclick="giftFunction(this)";/> </div>
                   </div>
                 </div>               
               </div>     
@@ -309,13 +322,18 @@
             }
 
             var headers = document.getElementById("div2");
-            var cards = headers.getElementsByClassName("circle-card");
+            var cards= headers.getElementsByClassName("circle-card");
             for (var i = 0; i < cards.length; i++) {
               cards[i].addEventListener("click", function() {
                 var currents = document.getElementsByClassName("activated");
                 currents[0].className = currents[0].className.replace("activated", "");
                 this.className += " activated";
               });
+            }
+            function giftFunction(imgs) {
+            var expandImg = document.getElementById("g-graphic");
+            expandImg.src = imgs.src;
+            expandImg.parentElement.style.display = "block";
             }
           </script>
         </div>
@@ -408,3 +426,4 @@
           </div>
 </body>
 </html>
+
