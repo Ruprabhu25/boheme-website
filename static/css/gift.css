@@ -374,7 +374,7 @@
     flex-direction: column;
   }
 
-  #gift-card-info{
+  #gift-card-info, #physical-card-info{
     display: flex;
     padding: 48px 32px;
     flex-direction: column;
@@ -407,7 +407,7 @@
     list-style-type: none;
   }
 
-  #gift-card-info p{
+  #gift-card-info p, #physical-card-info p{
     color: #5B6278;
   font-family: "seravekregular", sans-serif;
   font-size: 18px;
@@ -416,7 +416,7 @@
   line-height: 32px; /* 177.778% */
   }
 
-  #gift-card-info h3{
+  #gift-card-info h3, #physical-card-info h3{
     color: #5B6278;
     font-family: "seravekregular", sans-serif;
     font-size: 32px;
@@ -472,6 +472,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 48px;
+    border-radius: 9px;
   }
 
   .line{
@@ -491,16 +492,21 @@
     display: inline-block;
     width: 60px;
     height: 60px;
-    padding: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-right: 32px;
     border-radius: 100px;
-    border: 8px solid #F0F0F0;
+    overflow: hidden;
+    cursor: pointer;
   }
 
-  .activated{
+  .contain-c{
+    border: 8px solid #F0F0F0;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+
+  .activated > .contain-c{
     border: 8px solid #FCD19C;
   }
   /* gift card section end */
