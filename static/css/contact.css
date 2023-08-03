@@ -264,7 +264,6 @@ p {
   display: flex;
   flex-direction: row;
   margin: 0vw 6.25vw;
-  width: 100%;
 }
 
 #stop-by-left {
@@ -276,7 +275,7 @@ p {
 .directions {
   position: absolute;
   top: 19.531vw;
-  left: 21.25vw;
+  left: 18vw;
   color: #fafafa;
   font-family: "Arimo", sans-serif;
   font-size: 1.25vw;
@@ -299,8 +298,8 @@ p {
 }
 
 #stop-by-left iframe {
-  width: 58.125vw;
-  height: 28.906vw;
+  width: 50.047vw;
+  height: 28.828vw;
   border-radius: 1.563vw;
   margin-bottom: 1.875vw;
 }
@@ -319,7 +318,6 @@ p {
 /* Get in Touch Start */
 #get-in-touch-container {
   margin: 6.875vw 6.25vw;
-  width: 100%;
 }
 
 #get-in-touch-container p {
