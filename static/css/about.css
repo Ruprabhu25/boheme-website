@@ -1,23 +1,3 @@
-/*FontFace*/
-@font-face {
-  font-family: 'seravekmedium';
-  src: url('seravek-medium-webfont.woff2') format('woff2'),
-       url('seravek-medium-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'seravekregular';
-  src: url('seravek-webfont.woff2') format('woff2'),
-       url('seravek-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-/*FontFace*/
-
 html,body
 {
   width: 100%;
@@ -33,12 +13,18 @@ html,body
 }
 
 #announcement{
-  height: 5vw;
   width: 100%;
   background-color: #FAF6F5;
   text-align: center;
-  padding-top: 1.250vw;
   font-size:1.25vw;
+  font-family: Arimo;
+  font-size: 1.406vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5vw;
+  color: #192126;
+  padding-top: 1.25vw;
+  padding-bottom: 1.25vw;
 }
 
 #announcement p{
@@ -61,12 +47,12 @@ html,body
 
 /*nav bar start*/
 #nav-container {
-  height: 6.250vw;
+  height: 6.25vw;
   width: 100%;
   background-color: #F26C34;
   color:#FAF6F5;
-  padding-left: 3.750vw;
-  padding-top: 1.250vw;
+  padding-left: 3.75vw;
+  padding-top: 1.25vw;
   z-index: 1000;
 }
 
@@ -79,23 +65,23 @@ html,body
 #boheme-logo img{
   width: 9.609vw;
   height: auto;
-  margin-right: 3.750vw;
+  margin-right: 3.75vw;
 }
 
 
 .nav-item {
   font-family: "Arimo", sans-serif;
-  font-size: 1.250vw;
+  font-size: 1.25vw;
   padding-top: 0.938vw;
   margin-right: 2.813vw;
   font-weight:700;
 }
 
 .nav-button {
-  padding: 0.625vw 2.500vw;
+  padding: 0.625vw 2.5vw;
   border-radius: 4.844vw;
   font-family: "Arimo", sans-serif;
-  font-size: 1.250vw;
+  font-size: 1.25vw;
   cursor: pointer;
   font-weight: 700;
   margin-bottom: 0.938vw;
@@ -163,15 +149,15 @@ html,body
 
 #dropdown {
   overflow: visible;
-  padding-top: 0.645vw;
+  padding-top: 0.61vw;
   margin-right: 2.813vw;
 }
 
 #dropdown #dropbtn {
   font-family: "Arimo", sans-serif;
-  font-size: 1.250vw;
+  font-size: 1.25vw;
   font-weight:700;
-  line-height: 2.500vw;
+  line-height: 2.5vw;
   letter-spacing: -0.024vw;
   border: none;
   outline: none;
@@ -195,7 +181,7 @@ html,body
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 12.500vw;
+  min-width: 12.5vw;
   box-shadow: 0vw 0.625vw 1.25vw 0vw rgba(0,0,0,0.2);
   z-index: 1000;
   margin-top: 0.313vw;
@@ -214,6 +200,7 @@ html,body
   padding: 0vw 1.875vw;
   align-items: center;
   gap: 0.781vw;
+  font-size: 1.25vw;
 }
 
 #dropdown-content a:hover {
@@ -229,16 +216,17 @@ html,body
 /*nav bar end*/
 /*happiest store*/
 #happiest-store {
-  background-color: #fdf5eb;
+  background-image: url(/static/img/happiest-store.png);
+  background-size: cover;
   width: 100%;
-  padding-left: 3.75vw;
-  padding-top: 1.25vw;
-  padding-bottom: 1.25vw;
+  height: 35.625vw;
+}
+
+.happiest-text{
+  padding-top: 4.688vw;
 }
 
 .text-container {
-  margin-top: 2%;
-  margin-bottom: 2%;
   text-align: center;
   position: relative;
   width: 50%;
@@ -250,78 +238,33 @@ html,body
   color: #000000;
 }
 
+.text-subheader{
+  color: #F26D36;
+  text-align: center;
+  font-family: Readex Pro;
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5vw; /* 200% */
+  letter-spacing: -0.024vw;
+}
+
 .text-content {
   margin-top: 2%;
   margin-bottom: 2%;
-  font-family: "Seravek";
+  color: #000;
+  text-align: center;
+  font-family: Mukta;
   font-size: 1.875vw;
-  color: #4c4c4c;
-  line-height: 150%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 2.813vw */
+  letter-spacing: -0.041vw;
+  width: 43.047vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.store-btn {
-  background-color: #f26c34;
-  border-radius: 1.563vw;
-  height: 2.734vw;
-  width: 11.719vw;
-  border: none;
-  color: #ffffff;
-  font-family: "Arimo";
-  font-weight: bold;
-  font-size: 1.406vw;
-}
-
-.image-container {
-  position: absolute;
-  top: 15.625vw;
-  right: 3.906vw;
-}
-
-.imgpos1 {
-  position: relative;
-}
-
-.imgpos2 {
-  position: absolute;
-  top: -0.781vw;
-  left: 3.906vw;
-}
-
-.imgpos3 {
-  position: absolute;
-  top: 4.297vw;
-  left: -1.172vw;
-}
-
-.imgpos4 {
-  position: absolute;
-  top: 10.156vw;
-  left: -3.125vw;
-}
-
-.imgpos5 {
-  position: absolute;
-  bottom: -2.344vw;
-  right: 8.594vw;
-}
-
-.imgpos6 {
-  position: absolute;
-  bottom: 0vw;
-  right: 1.953vw;
-}
-
-.imgpos7 {
-  position: absolute;
-  bottom: 5.469vw;
-  right: -1.563vw;
-}
-
-.imgpos8 {
-  position: absolute;
-  bottom: 11.719vw;
-  right: -3.125vw;
-}
 
 /*sustainable styles*/
 .sustainable-styles {
@@ -337,9 +280,10 @@ html,body
 
 .our-story {
   margin: 2%;
+  border-radius: 0.469vw;
   /*float: right;*/
   /*display: inline-block;*/
-  background-color: #c0e08e;
+  background-color: #C0E08E80;
 }
 
 .story-h1 {
@@ -349,7 +293,10 @@ html,body
   color: #f26c34;
   font-family: "Arimo";
   font-size: 1.563vw;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.034vw;
+
 }
 
 .story-h2 {
@@ -365,24 +312,26 @@ html,body
   margin-left: 5%;
   margin-top: 5%;
   color: #000000;
-  font-family: "Seravek";
+  font-family: "Mukta";
   font-size: 1.875vw;
 }
 
 .story-btn {
   position: relative;
-  margin-left: 20%;
-  margin-top: 10%;
-  align-items: center;
+  margin-left: 4%;
+  margin-top: 5%;
   background-color: #f26c34;
-  border-radius: 1.563vw;
-  height: 2.734vw;
-  width: 23.438vw;
+  border-radius: 4.844vw;
+  height: 3.75vw;
+  width: 27.188vw;
   border: none;
-  color: #ffffff;
+  color: #FAF9F5;;
   font-family: "Arimo";
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.406vw;
+  padding: 0.625vw 2.5vw;
+  cursor: pointer;
+  letter-spacing: -0.027vw;
 }
 
 /*what we believe in*/
@@ -423,12 +372,14 @@ html,body
 
 .item-image {
   align-self: center;
+
 }
 
 .item-content {
-  font-family: "Seravek";
+  font-family: "Mukta";
   font-size: 1.875vw;
   color: #585858;
+  font-weight: 400;
 }
 
 /*Boheme's stylish staff*/
@@ -519,7 +470,7 @@ a:hover {
 }
 
 .text-footer {
-  font-family: "seravekregular";
+  font-family: "Mukta";
   color: #ffffff;
   font-size: 1.563vw;
   font-style: normal;
@@ -534,7 +485,7 @@ a:hover {
 }
 
 .title-text-footer {
-  font-family: "seravekregular";
+  font-family: "Mukta";
   font-size: 2.5vw;
   font-style: normal;
   font-weight: 500;
@@ -564,14 +515,14 @@ a:hover {
 
 ::placeholder {
   color: #fff;
-  font-family: "seravekregular";
+  font-family: "Mukta";
   font-size: 1.563vw;
   font-style: normal;
 }
 
 #email-button {
   color: #f26c34;
-  font-family: "seravekmedium";
+  font-family: "Mukta";
   font-weight: bold;
   font-size: 1.563vw;
   width: 11.484vw;
@@ -644,8 +595,8 @@ a:hover {
 /* new change */
 #copyright-footer {
   text-align: center;
-  font-family: "seravekregular";
-  font-size: 1.25vw;
+  font-family: "Mukta";
+  font-size: 1.406vw;
   padding-bottom: 1.25vw;
   letter-spacing: -0.024vw;
   text-transform: capitalize;

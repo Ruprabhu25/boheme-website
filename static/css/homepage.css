@@ -1,24 +1,4 @@
-/*FontFace*/
-@font-face {
-    font-family: 'seravekmedium';
-    src: url('seravek-medium-webfont.woff2') format('woff2'),
-         url('seravek-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  
-  }
-  
-  @font-face {
-    font-family: 'seravekregular';
-    src: url('seravek-webfont.woff2') format('woff2'),
-         url('seravek-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  
-  }
-  /*FontFace*/
-  
-  html,body
+html,body
   {
     width: 100%;
     height: 100%;
@@ -520,8 +500,12 @@ gap: 1.250vw;
     color: #000000;
   }
   .grid-item {
-    font-family: "Seravek", sans-serif;
+    font-family: "Mukta", sans-serif;
     font-size: 1.875vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 2.813vw */
+    letter-spacing: 0.028vw;
     color: #545859;
   }
 
@@ -535,20 +519,32 @@ gap: 1.250vw;
     grid-template-columns: auto auto;
   }
   .left-grid-item {
-    font-family: "Seravek", sans-serif;
+    font-family: "Mukta", sans-serif;
     font-size: 1.875vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5vw; /* 133.333% */
+    letter-spacing: -0.009vw;
     color: #545859;
     text-align: left;
   }
   .right-grid-item {
-    font-family: "Seravek", sans-serif;
+    font-family: "Mukta", sans-serif;
     font-size: 1.875vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5vw; /* 133.333% */
+    letter-spacing: -0.028vw;
     color: #545859;
     text-align: right;
   }
   .orangead {
-    font-family: "Seravek", sans-serif;
-    font-weight: bold;
+    font-family: "Mukta", sans-serif;
+    font-size: 1.875vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5vw;
+    letter-spacing: -0.009vw;
     color: #F26C34;
     display: inline-block;
   }
@@ -769,11 +765,12 @@ gap: 1.250vw;
 #sustainability-passage p{
     color: #545859;
     text-align: center;
-    font-family: 'seravekregular';
+    font-family: "Mukta", sans-serif;
     font-size: 1.563vw;
-    line-height: 150%; /*2.344vw */
-    letter-spacing: -0.034vw;
+    font-style: normal;
     font-weight: 400;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.023vw;
     word-wrap: break-word;
 }
 
@@ -787,7 +784,7 @@ gap: 1.250vw;
     padding-bottom:3.750vw;
     color: #79955F;
     text-align: center;
-    font-family: Seravek;
+    font-family: "Mukta", sans-serif;
     font-size: 1.563vw;
     font-style: italic;
     font-weight: 400;
@@ -888,14 +885,13 @@ display: flex;
 }
 
 #community-social h3 {
-    color: #878787;
-    font-family: "seravekregular";
+    font-family: "Mukta", sans-serif;
     font-size: 1.875vw;
     font-style: normal;
     font-weight: 400;
+    line-height: 2.5vw; /* 133.333% */
+    letter-spacing: -0.028vw;
     padding-bottom:1.406vw;
-    font-family: 'seravekregular';
-    font-size: 1.875vw;
     color: #878787;
 }
 
@@ -998,12 +994,13 @@ a:hover {color:white}
 }
 
 .text-footer {
-    font-family: 'seravekregular';
+    font-family: "Mukta", sans-serif;
     font-size: 1.563vw;
     font-style: normal;
     font-weight: 400;
-    line-height:2.500vw;
+    line-height: 2.5vw; /* 160% */
     letter-spacing: -0.03vw;
+    color: white;
 }
 
 .text-footer-right {
@@ -1011,16 +1008,6 @@ a:hover {color:white}
     cursor: pointer;
 }
 
-.title-text-footer {
-    font-family: 'seravekregular';
-    font-size:2.500vw;
-    font-style: normal;
-    font-weight: 500;
-    line-height:2.500vw;
-    letter-spacing: -0.03vw;
-    margin-bottom: 0;
-    color: white;
-}
 
 #email-footer {
     width: 50%;
@@ -1042,28 +1029,30 @@ a:hover {color:white}
 
 ::placeholder {
     color: #FFF;
-    font-family: 'seravekregular';
+    font-family: "Mukta", sans-serif;
     font-size: 1.563vw;
     font-style: normal;
+    font-weight: 400;
+    line-height: 142.523%; /* 28.505px */
 }
 
 #email-button {
     color: #F26C34;
-    font-family: 'seravekmedium';
-    font-weight: bold;
+    font-family: "Mukta", sans-serif;
     font-size: 1.563vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5vw; /* 160% */
+    letter-spacing: -0.03vw;
     width:11.484vw;
     height:3.750vw;
     border-radius:4.844vw;
     border-color: #F26C34;
     border-style: solid;
     background: #FFF;
-    font-size: 1.250vw;
     cursor: pointer;
     border: none;
-    font-weight: 500;
-    line-height:2.500vw;
-    letter-spacing: -0.03vw;
+   
 }
 
 #footer-bottom {
@@ -1122,10 +1111,13 @@ a:hover {color:white}
 /* new change */
 #copyright-footer{
     text-align: center;
-    font-family: 'seravekregular';
-    font-size: 1.250vw;
-    padding-bottom: 1.250vw;
+    font-family: "Mukta",sans-serif;
+    font-size: 1.406vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5vw; /* 200% */
     letter-spacing: -0.024vw;
+    padding-bottom: 1.250vw;
     text-transform: capitalize;
 }
 
