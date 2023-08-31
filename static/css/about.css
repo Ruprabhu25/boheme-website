@@ -149,30 +149,29 @@ html,body
 
 #dropdown {
   overflow: visible;
-  padding-top: 0.61vw;
-  margin-right: 2.813vw;
 }
 
 #dropdown #dropbtn {
   font-family: "Arimo", sans-serif;
-  font-size: 1.25vw;
-  font-weight:700;
-  line-height: 2.5vw;
-  letter-spacing: -0.024vw;
+  font-size: 16px;
+  padding-top: 4px;
+  margin-right: 40px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.304px;
   border: none;
   outline: none;
-  color: #FAF6F5;
+  color: #faf6f5;
   background-color: inherit;
-  padding: 0;
 }
 
-#arrow-down{
-  border: solid #FAF6F5;
-  border-width: 0 0.234vw 0.234vw 0;
+#arrow-down {
+  border: solid #faf6f5;
+  border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 0.234vw;
-  margin-left:0.781vw;
-  margin-bottom: 0.234vw;
+  padding: 3px;
+  margin-left: 10px;
+  margin-bottom: 3px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
@@ -181,14 +180,17 @@ html,body
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 12.5vw;
-  box-shadow: 0vw 0.625vw 1.25vw 0vw rgba(0,0,0,0.2);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  margin-top: 0.313vw;
+  margin-top: 4px;
   font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.304px;
 }
 
 #dropdown-content a {
+  font-family: "Arimo", sans-serif;
   float: none;
   color: black;
   text-decoration: none;
@@ -196,20 +198,19 @@ html,body
   text-align: left;
   z-index: 1000;
   display: flex;
-  height: 5.469vw;
-  padding: 0vw 1.875vw;
+  height: 70px;
+  padding: 0px 24px;
   align-items: center;
-  gap: 0.781vw;
-  font-size: 1.25vw;
+  gap: 10px;
 }
 
 #dropdown-content a:hover {
-  background-color: #FDF5EB;
+  background-color: #fdf5eb;
 }
 
 #dropdown:hover #dropdown-content {
   display: block;
-  width: 25.781vw;
+  width: 330px;
   z-index: 1000;
 }
 

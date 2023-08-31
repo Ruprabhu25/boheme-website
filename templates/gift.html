@@ -8,8 +8,6 @@
     <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Epilogue' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="//db.onlinewebfonts.com/c/5403db4e1a69d1dc66c1390eaca099d8?family=Seravek+Basic" rel="stylesheet">
-    <link href="//db.onlinewebfonts.com/c/279088fe0122006ce3444d71d6e07d62?family=Seravek+Basic+Light" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">   
     <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -28,17 +26,19 @@
             <div class="nav-item">ABOUT</div>
             <div class="nav-item">BUY-SELL-TRADE</div>
             <div class="nav-item">GIFT GUIDE</div>
-            <div id="dropdown">
-                <button id="dropbtn">MEDIA
-                  <i id="arrow-down"></i>
-                </button>
-                <div id="dropdown-content">
-                  <a href="#">FUN PHOTOS</a>
-                  <a href="#">VIBIN' VIDEOS</a>
-                  <a href="#">IN THE NEWS</a>
-                  <a href="#">BLOG</a>
-                </div>
-              </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                MEDIA
+                <i id="arrow-down"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#" onClick="location.href='photos.html'">FUN PHOTOS</a></li>
+                <li><a class="dropdown-item" href="#" onClick="location.href='videos.html'">VIBIN' VIDEOS</a></li>
+                <li><a class="dropdown-item" href="#" onClick="location.href='news.html'">IN THE NEWS</a></li>
+                <li><a class="dropdown-item" href="#" >BLOG</a></li>
+
+              </ul>
+          </div>
             <button class="nav-button" id="get-in-touch" onClick="location.href='contact.html'">GET IN TOUCH</button>
             <button id="visit-store">VISIT STORE <span id="arrow"></span></button>
         </div>
@@ -51,119 +51,53 @@
             <button id="shopify-button"> LET'S START </button>
         </div>
     </div>
-    <!-- occassion -->
+      <!-- occassion -->
     <div id="occassion-background">
-        <div id="occassion-header">
-            <h2> red, white, and blue </h2>
-            <h1 style="margin-bottom: 1.25vw; font-size: 3.125vw;"> Last-Minute 4th of July Sale </h1>
-            <p> We got your fit covered, get the food, and save your seats for the fireworks! </p>
-        </div>
-        <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="cards-wrapper">
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div id="card-body">
-                    <h1 class="card-title">Card title</h1>
-                    <h2 class="card-text">$$$</p>
-                  </div>
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                
-                  </div>
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="..." class="card-img-top" alt="...">
-                 
-                </div>
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    
-                  </div>
-                  <div class="card d-none d-md-block">
-                    <img src="..." class="card-img-top" alt="...">
-                    
-                  </div>
-              </div>
-              </div>
-              <div class="carousel-item">
-                <div class="cards-wrapper">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    
-                  </div>
-                  <div class="card d-none d-md-block">
-                    <img src="..." class="card-img-top" alt="...">
-                    
-                  </div>
-                  <div class="card d-none d-md-block">
-                    <img src="..." class="card-img-top" alt="...">
-                   
-                  </div>
-
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    
-                  </div>
-                  <div class="card d-none d-md-block">
-                    <img src="..." class="card-img-top" alt="...">
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="cards-wrapper">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    
-                  </div>
-                  <div class="card d-none d-md-block">
-                    <img src="..." class="card-img-top" alt="...">
-                    
-                  </div>
-                  <div class="card d-none d-md-block">
-                    <img src="..." class="card-img-top" alt="...">
-                    
-                  </div>
-                  <div class="card d-none d-md-block">
-                    <img src="..." class="card-img-top" alt="...">
-                    
-                  </div>
-                  <div class="card d-none d-md-block">
-                    <img src="..." class="card-img-top" alt="...">
-                    
-                  </div>
-                  
-                </div>
-              </div>
+      <div id="occassion-header">
+        <h2> red, white, and blue </h2>
+        <h1 style="margin-bottom: 1.25vw; font-size: 3.125vw;"> Last-Minute 4th of July Sale </h1>
+        <p> We got your fit covered, get the food, and save your seats for the fireworks! </p>
+    </div>
+      <div class="cards-array1">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div id="card-body">
+              <div class="card-title">Card title</div>
+              <div class="card-text">$$$</div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
+          <div class="card ">
+            <img src="..." class="card-img-top" alt="...">
+            <div id="card-body">
+              <div class="card-title">Card title</div>
+              <div class="card-text">$$$</div>
+            </div>
+          </div>
+          <div class="card ">
+            <img src="..." class="card-img-top" alt="...">
+            <div id="card-body">
+              <div class="card-title">Card title</div>
+              <div class="card-text">$$$</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div id="card-body">
+              <div class="card-title">Card title</div>
+              <div class="card-text">$$$</div>
+            </div>
+          </div>
+          <div class="card ">
+            <img src="..." class="card-img-top" alt="...">
+            <div id="card-body">
+              <div class="card-title">Card title</div>
+              <div class="card-text">$$$</div>
+            </div>
+          </div>
+      </div>
+    </div>
     </div>
     <div id="padding"></div>
     <!-- every ocassion -->
@@ -173,97 +107,46 @@
             <h1 style="margin-bottom: 1.25vw; font-size: 3.125vw;"> For every occassion </h1>
             <p> Find the perfect gift for that special someone at a great price. Most items are $2-$12 each! </p>
         </div>
-        <div id="carouselExampleControl" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="cards-wrapper">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div id="card-body">
-                  <h1 class="card-title">Card title</h1>
-                  <h2 class="card-text">$$$</p>
-                </div>
-              </div>
-              <div class="card d-none d-md-block">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-              
-                </div>
-              </div>
-              <div class="card d-none d-md-block">
-                <img src="..." class="card-img-top" alt="...">
-               
-              </div>
-              <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="..." class="card-img-top" alt="...">
-                  
-                </div>
-            </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="..." class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="..." class="card-img-top" alt="...">
-                 
-                </div>
-
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="..." class="card-img-top" alt="...">
-                  
-                </div>
+        <div class="cards-array1">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div id="card-body">
+                <div class="card-title">Card title</div>
+                <div class="card-text">$$$</div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="..." class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="..." class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="..." class="card-img-top" alt="...">
-                  
-                </div>
-                <div class="card d-none d-md-block">
-                  <img src="..." class="card-img-top" alt="...">
-                  
-                </div>
-                
+            <div class="card ">
+              <img src="..." class="card-img-top" alt="...">
+              <div id="card-body">
+                <div class="card-title">Card title</div>
+                <div class="card-text">$$$</div>
               </div>
             </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControl" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControl" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+            <div class="card ">
+              <img src="..." class="card-img-top" alt="...">
+              <div id="card-body">
+                <div class="card-title">Card title</div>
+                <div class="card-text">$$$</div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div id="card-body">
+                <div class="card-title">Card title</div>
+                <div class="card-text">$$$</div>
+              </div>
+            </div>
+            <div class="card ">
+              <img src="..." class="card-img-top" alt="...">
+              <div id="card-body">
+                <div class="card-title">Card title</div>
+                <div class="card-text">$$$</div>
+              </div>
+            </div>
         </div>
+    </div>
     </div>
     <div id="padding"></div>
     <!-- gift card -->
@@ -306,8 +189,8 @@
           </div>
           <div id="gift-section2">
             <div id="myDIV"> 
-              <button id="btn1" style="border-radius: 0.469vw 0vw 0vw 0.469vw;"  class="btn ">Physical Cards</button>
-              <button id="btn2" style="border-radius: 0vw 0.469vw 0.469vw 0vw;" class="btn actives">eGift Cards</button>
+              <button id="btn1" style="border-radius: 0.469vw 0vw 0vw 0.469vw;"  class="btns ">Physical Cards</button>
+              <button id="btn2" style="border-radius: 0vw 0.469vw 0.469vw 0vw;" class="btns actives">eGift Cards</button>
             </div>
             <div class="app-div1 hidden">
               <p style="display:inline-block; margin-top: 3.906vw; color: #F26D36;"> <img id="card" src="/static/img/giftcard-icon.png"/> 
@@ -425,7 +308,7 @@
             });
             // Add active class to the current button (highlight it)
             var header = document.getElementById("myDIV");
-            var btns = header.getElementsByClassName("btn");
+            var btns = header.getElementsByClassName("btns");
             for (var i = 0; i < btns.length; i++) {
               btns[i].addEventListener("click", function() {
               var current = document.getElementsByClassName("actives");
