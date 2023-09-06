@@ -25,17 +25,19 @@
             <div class="nav-item">ABOUT</div>
             <div class="nav-item">BUY-SELL-TRADE</div>
             <div class="nav-item">GIFT GUIDE</div>
-            <div id="dropdown">
-                <button id="dropbtn">MEDIA
-                  <i id="arrow-down"></i>
-                </button>
-                <div id="dropdown-content">
-                  <a href="#">FUN PHOTOS</a>
-                  <a href="#">VIBIN' VIDEOS</a>
-                  <a href="#">IN THE NEWS</a>
-                  <a href="#">BLOG</a>
-                </div>
-              </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                MEDIA
+                <i id="arrow-down"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#" onClick="location.href='photos.html'">FUN PHOTOS</a></li>
+                <li><a class="dropdown-item" href="#" onClick="location.href='videos.html'">VIBIN' VIDEOS</a></li>
+                <li><a class="dropdown-item" href="#" onClick="location.href='news.html'">IN THE NEWS</a></li>
+                <li><a class="dropdown-item" href="#" >BLOG</a></li>
+
+              </ul>
+          </div>
             <button class="nav-button" id="get-in-touch" onClick="location.href='contact.html'">GET IN TOUCH</button>
             <button id="visit-store">VISIT STORE <span id="arrow"></span></button>
         </div>
